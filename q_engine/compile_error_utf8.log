@@ -1,0 +1,7850 @@
+﻿g++ : In file 
+included from .\eigen-
+3.4.0/Eigen/Core:162:0
+,
+Au caractère Ligne:1 
+: 1
++ g++ -std=c++17 -I 
+.\eigen-3.4.0 -I 
+.\include 
+.\src\QuantumCore.cpp 
+.\ ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (In file in   
+ clude...gen/Core:    
+162:0,:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:504
+:25: error: 
+'invoke_result' in 
+namespace 'std' does 
+not name a template 
+type
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+   ^~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:504
+:38: error: expected 
+unqualified-id before 
+'<' token
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+                ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:505
+:31: error: 'type1' 
+was not declared in 
+this scope
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+         ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:505
+:36: error: template 
+argument 1 is invalid
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+              ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:162:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:616
+:25: error: 
+'invoke_result' in 
+namespace 'std' does 
+not name a template 
+type
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+   ^~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:616
+:38: error: expected 
+unqualified-id before 
+'<' token
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+                ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:617
+:31: error: 'type1' 
+was not declared in 
+this scope
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+         ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:617
+:36: error: template 
+argument 1 is invalid
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+              ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:276:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h: In 
+instantiation of 
+'struct Eigen::interna
+l::traits<Eigen::Produ
+ct<Eigen::Product<Eige
+n::Matrix<std::complex
+<double>, -1, -1>, Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0> >':
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:120:7
+:   required from 
+'class Eigen::internal
+::dense_product_base<E
+igen::Product<Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0>, Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, 0, 8>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:152:7
+:   required from 
+'class Eigen::ProductI
+mpl<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0, 
+Eigen::Dense>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:71:7:
+   required from 
+'class Eigen::Product<
+Eigen::Product<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, 0>, E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, 0>'
+.\src\QuantumCore.cpp:
+25:55:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:29:12
+7: error: no type 
+named 'ReturnType' in 
+'struct Eigen::ScalarB
+inaryOpTraits<std::com
+plex<double>, int, Eig
+en::internal::scalar_p
+roduct_op<std::complex
+<double>, int> >'
+   typedef typename Sc
+alarBinaryOpTraits<typ
+ename traits<LhsCleane
+d>::Scalar, typename t
+raits<RhsCleaned>::Sca
+lar>::ReturnType 
+Scalar;
+                      
+                      
+                      
+                      
+                      
+                 
+^~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:272:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h: 
+In instantiation of 
+'class Eigen::DenseBas
+e<Eigen::Product<Eigen
+::Product<Eigen::Matri
+x<std::complex<double>
+, -1, -1>, Eigen::Matr
+ix<std::complex<double
+>, -1, -1>, 0>, Eigen:
+:CwiseUnaryOp<Eigen::i
+nternal::scalar_conjug
+ate_op<std::complex<do
+uble> >, const Eigen::
+Transpose<const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> > >, 
+0> >':
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:48
+:34:   required from 
+'class Eigen::MatrixBa
+se<Eigen::Product<Eige
+n::Product<Eigen::Matr
+ix<std::complex<double
+>, -1, -1>, Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, 0>, Eigen
+::CwiseUnaryOp<Eigen::
+internal::scalar_conju
+gate_op<std::complex<d
+ouble> >, const Eigen:
+:Transpose<const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+0> >'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:120:7
+:   required from 
+'class Eigen::internal
+::dense_product_base<E
+igen::Product<Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0>, Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, 0, 8>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:152:7
+:   required from 
+'class Eigen::ProductI
+mpl<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0, 
+Eigen::Dense>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:71:7:
+   required from 
+'class Eigen::Product<
+Eigen::Product<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, 0>, E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, 0>'
+.\src\QuantumCore.cpp:
+25:55:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:83:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::coeff' in 'Ei
+gen::DenseBase<Eigen::
+Product<Eigen::Product
+<Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using 
+Base::coeff;
+                 ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:84:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::coeffByOuterI
+nner' in 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka 
+class Eigen::DenseCoef
+fsBase<Eigen::Product<
+Eigen::Product<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, 0>, E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, 0>, 0>}'
+     using Base::coeff
+ByOuterInner;
+                 
+^~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:85:
+26: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::operator()' 
+in 'Eigen::DenseBase<E
+igen::Product<Eigen::P
+roduct<Eigen::Matrix<s
+td::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using 
+Base::operator();
+                      
+    ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:86:
+26: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::operator[]' 
+in 'Eigen::DenseBase<E
+igen::Product<Eigen::P
+roduct<Eigen::Matrix<s
+td::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using 
+Base::operator[];
+                      
+    ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:87:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::x' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using Base::x;
+                 ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:88:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::y' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using Base::y;
+                 ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:89:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::z' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using Base::z;
+                 ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:90:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::Product<Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, 0>, Eig
+en::CwiseUnaryOp<Eigen
+::internal::scalar_con
+jugate_op<std::complex
+<double> >, const Eige
+n::Transpose<const Eig
+en::Matrix<std::comple
+x<double>, -1, -1> > 
+>, 0> >::Base {aka Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}::w' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Pr
+oduct<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 
+0>, 0>}'
+     using Base::w;
+                 ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:273:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h: 
+In instantiation of 
+'class Eigen::MatrixBa
+se<Eigen::Product<Eige
+n::Product<Eigen::Matr
+ix<std::complex<double
+>, -1, -1>, Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, 0>, Eigen
+::CwiseUnaryOp<Eigen::
+internal::scalar_conju
+gate_op<std::complex<d
+ouble> >, const Eigen:
+:Transpose<const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+0> >':
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:120:7
+:   required from 
+'class Eigen::internal
+::dense_product_base<E
+igen::Product<Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1>, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0>, Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, 0, 8>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:152:7
+:   required from 
+'class Eigen::ProductI
+mpl<Eigen::Product<Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, 0, 
+Eigen::Dense>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:71:7:
+   required from 
+'class Eigen::Product<
+Eigen::Product<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, 0>, E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, 0>'
+.\src\QuantumCore.cpp:
+25:55:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:75
+:17: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::Product<Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, Eigen
+::Matrix<std::complex<
+double>, -1, -1>, 0>, 
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, 0> >}::coeff' in 
+'Eigen::MatrixBase<Eig
+en::Product<Eigen::Pro
+duct<Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>, Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>}'
+     using 
+Base::coeff;
+                 ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:78
+:17: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::Product<Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, Eigen
+::Matrix<std::complex<
+double>, -1, -1>, 0>, 
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, 0> >}::eval' in '
+Eigen::MatrixBase<Eige
+n::Product<Eigen::Prod
+uct<Eigen::Matrix<std:
+:complex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>}'
+     using Base::eval;
+                 ^~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:79
+:25: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::Product<Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, Eigen
+::Matrix<std::complex<
+double>, -1, -1>, 0>, 
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, 0> 
+>}::operator-' in 'Eig
+en::MatrixBase<Eigen::
+Product<Eigen::Product
+<Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>}'
+     using 
+Base::operator-;
+                      
+   ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:82
+:25: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::Product<Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, Eigen
+::Matrix<std::complex<
+double>, -1, -1>, 0>, 
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, 0> 
+>}::operator*=' in 'Ei
+gen::MatrixBase<Eigen:
+:Product<Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>}'
+     using 
+Base::operator*=;
+                      
+   ^~
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:83
+:25: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::Product<Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>, Eigen
+::Matrix<std::complex<
+double>, -1, -1>, 0>, 
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, 0> 
+>}::operator/=' in 'Ei
+gen::MatrixBase<Eigen:
+:Product<Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::Product<
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, 0> 
+>}'
+     using 
+Base::operator/=;
+                      
+   ^~
+.\src\QuantumCore.cpp:
+ In member function 
+'q_engine::Matrix q_en
+gine::QuantumSystem::l
+indbladian(const 
+Matrix&) const':
+.\src\QuantumCore.cpp:
+34:28: error: no 
+match for 'operator*' 
+(operand types are 'st
+d::complex<double>' 
+and 'const Eigen::Cwis
+eBinaryOp<Eigen::inter
+nal::scalar_difference
+_op<std::complex<doubl
+e>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >')
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+   ~~~^~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:404:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+_Tp&, const 
+std::complex<_Tp>&)
+     operator*(const 
+_Tp& __x, const 
+complex<_Tp>& __y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:404:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'const 
+Eigen::CwiseBinaryOp<E
+igen::internal::scalar
+_difference_op<std::co
+mplex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >' 
+is not derived from 
+'const 
+std::complex<_Tp>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:395:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+std::complex<_Tp>&, 
+const _Tp&)
+     operator*(const 
+complex<_Tp>& __x, 
+const _Tp& __y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:395:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   
+deduced conflicting 
+types for parameter 
+'const _Tp' ('double' 
+and 'Eigen::CwiseBinar
+yOp<Eigen::internal::s
+calar_difference_op<st
+d::complex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >')
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:386:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+std::complex<_Tp>&, 
+const 
+std::complex<_Tp>&)
+     operator*(const 
+complex<_Tp>& __x, 
+const complex<_Tp>& 
+__y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:386:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'const 
+Eigen::CwiseBinaryOp<E
+igen::internal::scalar
+_difference_op<std::co
+mplex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >' 
+is not derived from 
+'const 
+std::complex<_Tp>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Ge
+ometry:46:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:6,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Geometry/Scaling.h:1
+35:1: note: 
+candidate: 
+template<class 
+Derived, class 
+Scalar> Eigen::CwiseBi
+naryOp<Eigen::internal
+::scalar_product_op<ty
+pename Eigen::internal
+::traits<T>::Scalar, 
+Scalar>, const 
+Derived, const 
+typename Eigen::intern
+al::plain_constant_typ
+e<Expr, 
+Scalar>::type> Eigen::
+operator*(const Eigen:
+:MatrixBase<Derived>&,
+ const Eigen::UniformS
+caling<Scalar>&)
+ operator*(const 
+MatrixBase<Derived>& 
+matrix, const UniformS
+caling<Scalar>& s)
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Geometry/Scaling.h:1
+35:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'std::c
+omplex<double>' is 
+not derived from 
+'const Eigen::MatrixBa
+se<Derived>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Ho
+useholder:24:0,
+                 from 
+.\eigen-3.4.0/Eigen/QR
+:15,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:4,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Householder/Househol
+derSequence.h:513:99: 
+note: candidate: 
+template<class 
+OtherDerived, class 
+VectorsType, class 
+CoeffsType, int Side> 
+typename Eigen::intern
+al::matrix_type_times_
+scalar_type<typename 
+VectorsType::Scalar, 
+OtherDerived>::Type Ei
+gen::operator*(const E
+igen::MatrixBase<Deriv
+ed>&, const Eigen::Hou
+seholderSequence<Vecto
+rsType, CoeffsType, 
+Side>&)
+ typename internal::ma
+trix_type_times_scalar
+_type<typename Vectors
+Type::Scalar,OtherDeri
+ved>::Type 
+operator*(const Matrix
+Base<OtherDerived>& 
+other, const Household
+erSequence<VectorsType
+,CoeffsType,Side>& h)
+                      
+                      
+                      
+                      
+           ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Householder/Househol
+derSequence.h:513:99: 
+note:   template 
+argument deduction/sub
+stitution failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'std::c
+omplex<double>' is 
+not derived from 
+'const Eigen::MatrixBa
+se<Derived>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:327:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:325:1: note: 
+candidate: 
+template<class Transpo
+sitionsDerived, class 
+MatrixDerived> const E
+igen::Product<MatrixDe
+rived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::Transpositi
+onsBase<Transpositions
+Derived>&, const 
+Eigen::MatrixBase<U>&)
+ operator*(const Trans
+positionsBase<Transpos
+itionsDerived> 
+&transpositions,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:325:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'std::c
+omplex<double>' is 
+not derived from 
+'const Eigen::Transpos
+itionsBase<Transpositi
+onsDerived>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:327:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:313:1: note: 
+candidate: 
+template<class 
+MatrixDerived, class T
+ranspositionsDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::MatrixBase<
+Derived>&, const Eigen
+::TranspositionsBase<T
+ranspositionsDerived>&
+)
+ operator*(const Matri
+xBase<MatrixDerived> 
+&matrix,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:313:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'std::c
+omplex<double>' is 
+not derived from 
+'const Eigen::MatrixBa
+se<Derived>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:326:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:527:1: note: 
+candidate: 
+template<class 
+PermutationDerived, 
+class MatrixDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::Permutation
+Base<PermutationDerive
+d>&, const 
+Eigen::MatrixBase<U>&)
+ operator*(const Permu
+tationBase<Permutation
+Derived> &permutation,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:527:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'std::c
+omplex<double>' is 
+not derived from 
+'const Eigen::Permutat
+ionBase<PermutationDer
+ived>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:326:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:515:1: note: 
+candidate: 
+template<class 
+MatrixDerived, class 
+PermutationDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::MatrixBase<
+Derived>&, const Eigen
+::PermutationBase<Perm
+utationDerived>&)
+ operator*(const Matri
+xBase<MatrixDerived> 
+&matrix,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:515:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+34:60: note:   'std::c
+omplex<double>' is 
+not derived from 
+'const Eigen::MatrixBa
+se<Derived>'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+                      
+                ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_differe
+nce_op<std::complex<do
+uble>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_d
+ifference_op<std::comp
+lex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> > > E
+igen::operator*(const 
+T&, const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h: 
+In substitution of 
+'template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_differe
+nce_op<std::complex<do
+uble>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_d
+ifference_op<std::comp
+lex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> > > E
+igen::operator*(const 
+T&, const 
+StorageBaseType&) 
+[with T = std::complex
+<double>]':
+.\src\QuantumCore.cpp:
+34:60:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: error: no type 
+named 'type' in 
+'struct Eigen::interna
+l::promote_scalar_arg<
+int, 
+std::complex<double>, 
+false>'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<std
+::complex<double>, T, 
+Eigen::internal::has_R
+eturnType<Eigen::Scala
+rBinaryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type, 
+std::complex<double> 
+>, const typename Eige
+n::internal::plain_con
+stant_type<Eigen::Prod
+uct<Eigen::Matrix<std:
+:complex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, typename 
+Eigen::internal::promo
+te_scalar_arg<std::com
+plex<double>, T, Eigen
+::internal::has_Return
+Type<Eigen::ScalarBina
+ryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type>::
+type, const Eigen::Pro
+duct<Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> > Eigen::
+operator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+34:45: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r-(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Product<Eigen::Matrix<
+std::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>; Derived 
+= Eigen::Product<Eigen
+::Matrix<std::complex<
+double>, -1, -1>, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>; typename Eigen::in
+ternal::traits<OtherDe
+rived>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= std::complex<double>
+](((const Eigen::Matri
+xBase<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >*)(& rho))->E
+igen::MatrixBase<Deriv
+ed>::operator*<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> 
+>(((const q_engine::Qu
+antumSystem*)this)->q_
+engine::QuantumSystem:
+:H_.q_engine::Hamilton
+ian::data))' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_difference_op<
+std::complex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >') 
+to type 'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::Product<Eigen
+::Matrix<std::complex<
+double>, -1, -1>, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 0> 
+>&}'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+        ~~~~~~~~~~~~~~
+~^~~~~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<std
+::complex<double>, T, 
+Eigen::internal::has_R
+eturnType<Eigen::Scala
+rBinaryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type, 
+std::complex<double> 
+>, const typename Eige
+n::internal::plain_con
+stant_type<Eigen::Matr
+ix<std::complex<double
+>, -1, -1>, typename E
+igen::internal::promot
+e_scalar_arg<std::comp
+lex<double>, T, Eigen:
+:internal::has_ReturnT
+ype<Eigen::ScalarBinar
+yOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type>::
+type, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1> > Eigen::o
+perator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+34:45: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r-(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Product<Eigen::Matrix<
+std::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>; Derived 
+= Eigen::Product<Eigen
+::Matrix<std::complex<
+double>, -1, -1>, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>; typename Eigen::in
+ternal::traits<OtherDe
+rived>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= std::complex<double>
+](((const Eigen::Matri
+xBase<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >*)(& rho))->E
+igen::MatrixBase<Deriv
+ed>::operator*<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> 
+>(((const q_engine::Qu
+antumSystem*)this)->q_
+engine::QuantumSystem:
+:H_.q_engine::Hamilton
+ian::data))' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_difference_op<
+std::complex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >') 
+to type 'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1> >&}'
+     Matrix 
+commutator = -i * 
+(H_.data * rho - rho 
+* H_.data);
+                      
+        ~~~~~~~~~~~~~~
+~^~~~~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:276:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h: In 
+instantiation of 
+'struct Eigen::interna
+l::traits<Eigen::Produ
+ct<Eigen::CwiseUnaryOp
+<Eigen::internal::scal
+ar_conjugate_op<std::c
+omplex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >':
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:120:7
+:   required from 
+'class Eigen::internal
+::dense_product_base<E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0, 8>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:152:7
+:   required from 
+'class Eigen::ProductI
+mpl<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0, 
+Eigen::Dense>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:71:7:
+   required from 
+'class Eigen::Product<
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>'
+.\src\QuantumCore.cpp:
+39:50:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:29:12
+7: error: no type 
+named 'ReturnType' in 
+'struct Eigen::ScalarB
+inaryOpTraits<int, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<int, 
+std::complex<double> 
+> >'
+   typedef typename Sc
+alarBinaryOpTraits<typ
+ename traits<LhsCleane
+d>::Scalar, typename t
+raits<RhsCleaned>::Sca
+lar>::ReturnType 
+Scalar;
+                      
+                      
+                      
+                      
+                      
+                 
+^~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:272:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h: 
+In instantiation of 
+'class Eigen::DenseBas
+e<Eigen::Product<Eigen
+::CwiseUnaryOp<Eigen::
+internal::scalar_conju
+gate_op<std::complex<d
+ouble> >, const Eigen:
+:Transpose<const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, 0> >':
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:48
+:34:   required from 
+'class Eigen::MatrixBa
+se<Eigen::Product<Eige
+n::CwiseUnaryOp<Eigen:
+:internal::scalar_conj
+ugate_op<std::complex<
+double> >, const Eigen
+::Transpose<const Eige
+n::Matrix<std::complex
+<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:120:7
+:   required from 
+'class Eigen::internal
+::dense_product_base<E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0, 8>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:152:7
+:   required from 
+'class Eigen::ProductI
+mpl<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0, 
+Eigen::Dense>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:71:7:
+   required from 
+'class Eigen::Product<
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>'
+.\src\QuantumCore.cpp:
+39:50:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:83:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::coeff' in 'Ei
+gen::DenseBase<Eigen::
+Product<Eigen::CwiseUn
+aryOp<Eigen::internal:
+:scalar_conjugate_op<s
+td::complex<double> 
+>, const Eigen::Transp
+ose<const Eigen::Matri
+x<std::complex<double>
+, -1, -1> > >, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>, 0>}'
+     using 
+Base::coeff;
+                 ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:84:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::coeffByOuterI
+nner' in 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka 
+class Eigen::DenseCoef
+fsBase<Eigen::Product<
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, 0>}'
+     using Base::coeff
+ByOuterInner;
+                 
+^~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:85:
+26: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::operator()' 
+in 'Eigen::DenseBase<E
+igen::Product<Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, 
+0> >::Base {aka class 
+Eigen::DenseCoeffsBase
+<Eigen::Product<Eigen:
+:CwiseUnaryOp<Eigen::i
+nternal::scalar_conjug
+ate_op<std::complex<do
+uble> >, const Eigen::
+Transpose<const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> > >, E
+igen::Matrix<std::comp
+lex<double>, -1, -1>, 
+0>, 0>}'
+     using 
+Base::operator();
+                      
+    ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:86:
+26: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::operator[]' 
+in 'Eigen::DenseBase<E
+igen::Product<Eigen::C
+wiseUnaryOp<Eigen::int
+ernal::scalar_conjugat
+e_op<std::complex<doub
+le> >, const Eigen::Tr
+anspose<const Eigen::M
+atrix<std::complex<dou
+ble>, -1, -1> > >, Eig
+en::Matrix<std::comple
+x<double>, -1, -1>, 
+0> >::Base {aka class 
+Eigen::DenseCoeffsBase
+<Eigen::Product<Eigen:
+:CwiseUnaryOp<Eigen::i
+nternal::scalar_conjug
+ate_op<std::complex<do
+uble> >, const Eigen::
+Transpose<const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> > >, E
+igen::Matrix<std::comp
+lex<double>, -1, -1>, 
+0>, 0>}'
+     using 
+Base::operator[];
+                      
+    ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:87:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::x' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>, 0>}'
+     using Base::x;
+                 ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:88:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::y' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>, 0>}'
+     using Base::y;
+                 ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:89:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::z' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>, 0>}'
+     using Base::z;
+                 ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/DenseBase.h:90:
+17: error: no members 
+matching 'Eigen::Dense
+Base<Eigen::Product<Ei
+gen::CwiseUnaryOp<Eige
+n::internal::scalar_co
+njugate_op<std::comple
+x<double> >, const Eig
+en::Transpose<const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >::Base {aka E
+igen::DenseCoeffsBase<
+Eigen::Product<Eigen::
+CwiseUnaryOp<Eigen::in
+ternal::scalar_conjuga
+te_op<std::complex<dou
+ble> >, const Eigen::T
+ranspose<const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> > >, Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+0>, 0>}::w' in 'Eigen:
+:DenseBase<Eigen::Prod
+uct<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseCoeffsBase<Ei
+gen::Product<Eigen::Cw
+iseUnaryOp<Eigen::inte
+rnal::scalar_conjugate
+_op<std::complex<doubl
+e> >, const Eigen::Tra
+nspose<const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1> > >, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>, 0>}'
+     using Base::w;
+                 ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:273:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h: 
+In instantiation of 
+'class Eigen::MatrixBa
+se<Eigen::Product<Eige
+n::CwiseUnaryOp<Eigen:
+:internal::scalar_conj
+ugate_op<std::complex<
+double> >, const Eigen
+::Transpose<const Eige
+n::Matrix<std::complex
+<double>, -1, -1> > 
+>, Eigen::Matrix<std::
+complex<double>, -1, 
+-1>, 0> >':
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:120:7
+:   required from 
+'class Eigen::internal
+::dense_product_base<E
+igen::CwiseUnaryOp<Eig
+en::internal::scalar_c
+onjugate_op<std::compl
+ex<double> >, const Ei
+gen::Transpose<const E
+igen::Matrix<std::comp
+lex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0, 8>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:152:7
+:   required from 
+'class Eigen::ProductI
+mpl<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0, 
+Eigen::Dense>'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Product.h:71:7:
+   required from 
+'class Eigen::Product<
+Eigen::CwiseUnaryOp<Ei
+gen::internal::scalar_
+conjugate_op<std::comp
+lex<double> >, const E
+igen::Transpose<const 
+Eigen::Matrix<std::com
+plex<double>, -1, -1> 
+> >, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>'
+.\src\QuantumCore.cpp:
+39:50:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:75
+:17: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::CwiseUnaryOp<E
+igen::internal::scalar
+_conjugate_op<std::com
+plex<double> >, const 
+Eigen::Transpose<const
+ Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1> > >, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> 
+>}::coeff' in 'Eigen::
+MatrixBase<Eigen::Prod
+uct<Eigen::CwiseUnaryO
+p<Eigen::internal::sca
+lar_conjugate_op<std::
+complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >}'
+     using 
+Base::coeff;
+                 ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:78
+:17: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::CwiseUnaryOp<E
+igen::internal::scalar
+_conjugate_op<std::com
+plex<double> >, const 
+Eigen::Transpose<const
+ Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1> > >, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> 
+>}::eval' in 'Eigen::M
+atrixBase<Eigen::Produ
+ct<Eigen::CwiseUnaryOp
+<Eigen::internal::scal
+ar_conjugate_op<std::c
+omplex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >}'
+     using Base::eval;
+                 ^~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:79
+:25: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::CwiseUnaryOp<E
+igen::internal::scalar
+_conjugate_op<std::com
+plex<double> >, const 
+Eigen::Transpose<const
+ Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1> > >, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> 
+>}::operator-' in 'Eig
+en::MatrixBase<Eigen::
+Product<Eigen::CwiseUn
+aryOp<Eigen::internal:
+:scalar_conjugate_op<s
+td::complex<double> 
+>, const Eigen::Transp
+ose<const Eigen::Matri
+x<std::complex<double>
+, -1, -1> > >, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >}'
+     using 
+Base::operator-;
+                      
+   ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:82
+:25: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::CwiseUnaryOp<E
+igen::internal::scalar
+_conjugate_op<std::com
+plex<double> >, const 
+Eigen::Transpose<const
+ Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1> > >, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> 
+>}::operator*=' in 'Ei
+gen::MatrixBase<Eigen:
+:Product<Eigen::CwiseU
+naryOp<Eigen::internal
+::scalar_conjugate_op<
+std::complex<double> 
+>, const Eigen::Transp
+ose<const Eigen::Matri
+x<std::complex<double>
+, -1, -1> > >, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >}'
+     using 
+Base::operator*=;
+                      
+   ^~
+.\eigen-3.4.0/Eigen/sr
+c/Core/MatrixBase.h:83
+:25: error: no 
+members matching 'Eige
+n::MatrixBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> 
+>::Base {aka Eigen::De
+nseBase<Eigen::Product
+<Eigen::CwiseUnaryOp<E
+igen::internal::scalar
+_conjugate_op<std::com
+plex<double> >, const 
+Eigen::Transpose<const
+ Eigen::Matrix<std::co
+mplex<double>, -1, 
+-1> > >, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> 
+>}::operator/=' in 'Ei
+gen::MatrixBase<Eigen:
+:Product<Eigen::CwiseU
+naryOp<Eigen::internal
+::scalar_conjugate_op<
+std::complex<double> 
+>, const Eigen::Transp
+ose<const Eigen::Matri
+x<std::complex<double>
+, -1, -1> > >, Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, 0> 
+>::Base {aka class Eig
+en::DenseBase<Eigen::P
+roduct<Eigen::CwiseUna
+ryOp<Eigen::internal::
+scalar_conjugate_op<st
+d::complex<double> >, 
+const Eigen::Transpose
+<const Eigen::Matrix<s
+td::complex<double>, 
+-1, -1> > >, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >}'
+     using 
+Base::operator/=;
+                      
+   ^~
+.\src\QuantumCore.cpp:
+41:61: error: no 
+match for 'operator*' 
+(operand types are 
+'double' and 'const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_s
+um_op<std::complex<dou
+ble>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >')
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+             ~~~~^~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Ge
+ometry:46:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:6,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Geometry/Scaling.h:1
+35:1: note: 
+candidate: 
+template<class 
+Derived, class 
+Scalar> Eigen::CwiseBi
+naryOp<Eigen::internal
+::scalar_product_op<ty
+pename Eigen::internal
+::traits<T>::Scalar, 
+Scalar>, const 
+Derived, const 
+typename Eigen::intern
+al::plain_constant_typ
+e<Expr, 
+Scalar>::type> Eigen::
+operator*(const Eigen:
+:MatrixBase<Derived>&,
+ const Eigen::UniformS
+caling<Scalar>&)
+ operator*(const 
+MatrixBase<Derived>& 
+matrix, const UniformS
+caling<Scalar>& s)
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Geometry/Scaling.h:1
+35:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Ho
+useholder:24:0,
+                 from 
+.\eigen-3.4.0/Eigen/QR
+:15,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:4,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Householder/Househol
+derSequence.h:513:99: 
+note: candidate: 
+template<class 
+OtherDerived, class 
+VectorsType, class 
+CoeffsType, int Side> 
+typename Eigen::intern
+al::matrix_type_times_
+scalar_type<typename 
+VectorsType::Scalar, 
+OtherDerived>::Type Ei
+gen::operator*(const E
+igen::MatrixBase<Deriv
+ed>&, const Eigen::Hou
+seholderSequence<Vecto
+rsType, CoeffsType, 
+Side>&)
+ typename internal::ma
+trix_type_times_scalar
+_type<typename Vectors
+Type::Scalar,OtherDeri
+ved>::Type 
+operator*(const Matrix
+Base<OtherDerived>& 
+other, const Household
+erSequence<VectorsType
+,CoeffsType,Side>& h)
+                      
+                      
+                      
+                      
+           ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Householder/Househol
+derSequence.h:513:99: 
+note:   template 
+argument deduction/sub
+stitution failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:327:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:325:1: note: 
+candidate: 
+template<class Transpo
+sitionsDerived, class 
+MatrixDerived> const E
+igen::Product<MatrixDe
+rived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::Transpositi
+onsBase<Transpositions
+Derived>&, const 
+Eigen::MatrixBase<U>&)
+ operator*(const Trans
+positionsBase<Transpos
+itionsDerived> 
+&transpositions,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:325:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const Eigen::Transpos
+itionsBase<Transpositi
+onsDerived>' and 
+'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:327:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:313:1: note: 
+candidate: 
+template<class 
+MatrixDerived, class T
+ranspositionsDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::MatrixBase<
+Derived>&, const Eigen
+::TranspositionsBase<T
+ranspositionsDerived>&
+)
+ operator*(const Matri
+xBase<MatrixDerived> 
+&matrix,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:313:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:326:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:527:1: note: 
+candidate: 
+template<class 
+PermutationDerived, 
+class MatrixDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::Permutation
+Base<PermutationDerive
+d>&, const 
+Eigen::MatrixBase<U>&)
+ operator*(const Permu
+tationBase<Permutation
+Derived> &permutation,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:527:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const Eigen::Permutat
+ionBase<PermutationDer
+ived>' and 'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:326:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:515:1: note: 
+candidate: 
+template<class 
+MatrixDerived, class 
+PermutationDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::MatrixBase<
+Derived>&, const Eigen
+::PermutationBase<Perm
+utationDerived>&)
+ operator*(const Matri
+xBase<MatrixDerived> 
+&matrix,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:515:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_sum_op<
+std::complex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_s
+um_op<std::complex<dou
+ble>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> > > E
+igen::operator*(const 
+T&, const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h: 
+In substitution of 
+'template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_sum_op<
+std::complex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_s
+um_op<std::complex<dou
+ble>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> > > E
+igen::operator*(const 
+T&, const 
+StorageBaseType&) 
+[with T = double]':
+.\src\QuantumCore.cpp:
+41:99:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: error: no type 
+named 'type' in 
+'struct Eigen::interna
+l::promote_scalar_arg<
+int, double, false>'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:404:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+_Tp&, const 
+std::complex<_Tp>&)
+     operator*(const 
+_Tp& __x, const 
+complex<_Tp>& __y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:404:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   'const 
+Eigen::CwiseBinaryOp<E
+igen::internal::scalar
+_sum_op<std::complex<d
+ouble>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >' 
+is not derived from 
+'const 
+std::complex<_Tp>'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:395:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+std::complex<_Tp>&, 
+const _Tp&)
+     operator*(const 
+complex<_Tp>& __x, 
+const _Tp& __y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:395:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const 
+std::complex<_Tp>' 
+and 'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:386:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+std::complex<_Tp>&, 
+const 
+std::complex<_Tp>&)
+     operator*(const 
+complex<_Tp>& __x, 
+const complex<_Tp>& 
+__y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:386:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+41:99: note:   
+mismatched types 
+'const 
+std::complex<_Tp>' 
+and 'double'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                      
+                      
+           ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<std
+::complex<double>, T, 
+Eigen::internal::has_R
+eturnType<Eigen::Scala
+rBinaryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type, 
+std::complex<double> 
+>, const typename Eige
+n::internal::plain_con
+stant_type<Eigen::Prod
+uct<Eigen::Matrix<std:
+:complex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, typename 
+Eigen::internal::promo
+te_scalar_arg<std::com
+plex<double>, T, Eigen
+::internal::has_Return
+Type<Eigen::ScalarBina
+ryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type>::
+type, const Eigen::Pro
+duct<Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0> > Eigen::
+operator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+41:81: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Product<Eigen::Matrix<
+std::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>; Derived 
+= Eigen::Product<Eigen
+::Matrix<std::complex<
+double>, -1, -1>, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>; typename Eigen::in
+ternal::traits<OtherDe
+rived>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= std::complex<double>
+](((const Eigen::Matri
+xBase<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >*)(& rho))->E
+igen::MatrixBase<Deriv
+ed>::operator*<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> 
+>(k_dagger_k))' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<std::co
+mplex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >') 
+to type 'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::Product<Eigen
+::Matrix<std::complex<
+double>, -1, -1>, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 0> 
+>&}'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                   ~~~
+~~~~~~~~~~~~~~~^~~~~~~
+~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<std
+::complex<double>, T, 
+Eigen::internal::has_R
+eturnType<Eigen::Scala
+rBinaryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type, 
+std::complex<double> 
+>, const typename Eige
+n::internal::plain_con
+stant_type<Eigen::Matr
+ix<std::complex<double
+>, -1, -1>, typename E
+igen::internal::promot
+e_scalar_arg<std::comp
+lex<double>, T, Eigen:
+:internal::has_ReturnT
+ype<Eigen::ScalarBinar
+yOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type>::
+type, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1> > Eigen::o
+perator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+41:81: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Product<Eigen::Matrix<
+std::complex<double>, 
+-1, -1>, Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, 0>; Derived 
+= Eigen::Product<Eigen
+::Matrix<std::complex<
+double>, -1, -1>, Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+0>; typename Eigen::in
+ternal::traits<OtherDe
+rived>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= std::complex<double>
+](((const Eigen::Matri
+xBase<Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >*)(& rho))->E
+igen::MatrixBase<Deriv
+ed>::operator*<Eigen::
+Matrix<std::complex<do
+uble>, -1, -1> 
+>(k_dagger_k))' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<std::co
+mplex<double>, 
+std::complex<double> 
+>, const Eigen::Produc
+t<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>, Eigen::Matrix<std
+::complex<double>, 
+-1, -1>, 0>, const Eig
+en::Product<Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, 0> >') 
+to type 'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1> >&}'
+         dissipator 
++= K.data * rho * 
+K.data.adjoint() - 
+0.5 * (k_dagger_k * 
+rho + rho * 
+k_dagger_k);
+                      
+                      
+                   ~~~
+~~~~~~~~~~~~~~~^~~~~~~
+~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:253:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/functors/Binary
+Functors.h: In 
+instantiation of 
+'struct Eigen::interna
+l::scalar_sum_op<std::
+complex<double>, 
+int>':
+.\eigen-3.4.0/Eigen/sr
+c/Core/CwiseBinaryOp.h
+:143:20:   required 
+from 'class Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >'
+.\src\QuantumCore.cpp:
+49:51:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/functors/Binary
+Functors.h:34:88: 
+error: no type named 
+'ReturnType' in 
+'struct Eigen::ScalarB
+inaryOpTraits<std::com
+plex<double>, int, Eig
+en::internal::scalar_s
+um_op<std::complex<dou
+ble>, int> >'
+   typedef typename Sc
+alarBinaryOpTraits<Lhs
+Scalar,RhsScalar,scala
+r_sum_op>::ReturnType 
+result_type;
+                      
+                      
+                      
+                      
+^~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/functors/Binary
+Functors.h: In 
+instantiation of 
+'struct Eigen::interna
+l::scalar_sum_op<int, 
+std::complex<double> 
+>':
+.\eigen-3.4.0/Eigen/sr
+c/Core/CwiseBinaryOp.h
+:143:20:   required 
+from 'class Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<in
+t, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >'
+.\src\QuantumCore.cpp:
+53:74:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/functors/Binary
+Functors.h:34:88: 
+error: no type named 
+'ReturnType' in 
+'struct Eigen::ScalarB
+inaryOpTraits<int, 
+std::complex<double>, 
+Eigen::internal::scala
+r_sum_op<int, 
+std::complex<double> 
+> >'
+.\src\QuantumCore.cpp:
+ In member function 'q
+_engine::DensityMatrix
+ q_engine::QuantumSyst
+em::evolveLindbladRK4(
+const q_engine::Densit
+yMatrix&, double) 
+const':
+.\src\QuantumCore.cpp:
+53:44: error: no 
+match for 'operator*' 
+(operand types are 
+'double' and 'const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_s
+um_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >')
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+           ~~~~~~~~~~~
+^~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Ge
+ometry:46:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:6,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Geometry/Scaling.h:1
+35:1: note: 
+candidate: 
+template<class 
+Derived, class 
+Scalar> Eigen::CwiseBi
+naryOp<Eigen::internal
+::scalar_product_op<ty
+pename Eigen::internal
+::traits<T>::Scalar, 
+Scalar>, const 
+Derived, const 
+typename Eigen::intern
+al::plain_constant_typ
+e<Expr, 
+Scalar>::type> Eigen::
+operator*(const Eigen:
+:MatrixBase<Derived>&,
+ const Eigen::UniformS
+caling<Scalar>&)
+ operator*(const 
+MatrixBase<Derived>& 
+matrix, const UniformS
+caling<Scalar>& s)
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Geometry/Scaling.h:1
+35:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Ho
+useholder:24:0,
+                 from 
+.\eigen-3.4.0/Eigen/QR
+:15,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:4,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Householder/Househol
+derSequence.h:513:99: 
+note: candidate: 
+template<class 
+OtherDerived, class 
+VectorsType, class 
+CoeffsType, int Side> 
+typename Eigen::intern
+al::matrix_type_times_
+scalar_type<typename 
+VectorsType::Scalar, 
+OtherDerived>::Type Ei
+gen::operator*(const E
+igen::MatrixBase<Deriv
+ed>&, const Eigen::Hou
+seholderSequence<Vecto
+rsType, CoeffsType, 
+Side>&)
+ typename internal::ma
+trix_type_times_scalar
+_type<typename Vectors
+Type::Scalar,OtherDeri
+ved>::Type 
+operator*(const Matrix
+Base<OtherDerived>& 
+other, const Household
+erSequence<VectorsType
+,CoeffsType,Side>& h)
+                      
+                      
+                      
+                      
+           ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Householder/Househol
+derSequence.h:513:99: 
+note:   template 
+argument deduction/sub
+stitution failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:327:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:325:1: note: 
+candidate: 
+template<class Transpo
+sitionsDerived, class 
+MatrixDerived> const E
+igen::Product<MatrixDe
+rived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::Transpositi
+onsBase<Transpositions
+Derived>&, const 
+Eigen::MatrixBase<U>&)
+ operator*(const Trans
+positionsBase<Transpos
+itionsDerived> 
+&transpositions,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:325:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const Eigen::Transpos
+itionsBase<Transpositi
+onsDerived>' and 
+'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:327:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:313:1: note: 
+candidate: 
+template<class 
+MatrixDerived, class T
+ranspositionsDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::MatrixBase<
+Derived>&, const Eigen
+::TranspositionsBase<T
+ranspositionsDerived>&
+)
+ operator*(const Matri
+xBase<MatrixDerived> 
+&matrix,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/Transpositions.
+h:313:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:326:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:527:1: note: 
+candidate: 
+template<class 
+PermutationDerived, 
+class MatrixDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::Permutation
+Base<PermutationDerive
+d>&, const 
+Eigen::MatrixBase<U>&)
+ operator*(const Permu
+tationBase<Permutation
+Derived> &permutation,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:527:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const Eigen::Permutat
+ionBase<PermutationDer
+ived>' and 'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:326:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:515:1: note: 
+candidate: 
+template<class 
+MatrixDerived, class 
+PermutationDerived> 
+const Eigen::Product<M
+atrixDerived, 
+PermutationDerived, 
+2> Eigen::operator*(co
+nst Eigen::MatrixBase<
+Derived>&, const Eigen
+::PermutationBase<Perm
+utationDerived>&)
+ operator*(const Matri
+xBase<MatrixDerived> 
+&matrix,
+ ^~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/PermutationMatr
+ix.h:515:1: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const Eigen::MatrixBa
+se<Derived>' and 
+'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_sum_op<
+int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >, typename Ei
+gen::internal::promote
+_scalar_arg<int, T, Ei
+gen::internal::has_Ret
+urnType<Eigen::ScalarB
+inaryOpTraits<T, int, 
+Eigen::internal::scala
+r_product_op<T, int> 
+> >::value>::type>::ty
+pe, const Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> > > Eigen::ope
+rator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h: 
+In substitution of 
+'template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_sum_op<
+int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >, typename Ei
+gen::internal::promote
+_scalar_arg<int, T, Ei
+gen::internal::has_Ret
+urnType<Eigen::ScalarB
+inaryOpTraits<T, int, 
+Eigen::internal::scala
+r_product_op<T, int> 
+> >::value>::type>::ty
+pe, const Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> > > Eigen::ope
+rator*(const T&, 
+const 
+StorageBaseType&) 
+[with T = double]':
+.\src\QuantumCore.cpp:
+53:76:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: error: no type 
+named 'type' in 
+'struct Eigen::interna
+l::promote_scalar_arg<
+int, double, false>'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:404:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+_Tp&, const 
+std::complex<_Tp>&)
+     operator*(const 
+_Tp& __x, const 
+complex<_Tp>& __y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:404:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   'const 
+Eigen::CwiseBinaryOp<E
+igen::internal::scalar
+_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >' is not 
+derived from 'const 
+std::complex<_Tp>'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:395:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+std::complex<_Tp>&, 
+const _Tp&)
+     operator*(const 
+complex<_Tp>& __x, 
+const _Tp& __y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:395:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const 
+std::complex<_Tp>' 
+and 'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:50:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:386:5: note: 
+candidate: 
+template<class _Tp> 
+std::complex<_Tp> 
+std::operator*(const 
+std::complex<_Tp>&, 
+const 
+std::complex<_Tp>&)
+     operator*(const 
+complex<_Tp>& __x, 
+const complex<_Tp>& 
+__y)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw
+32\6.3.0\include\c++\c
+omplex:386:5: note:   
+template argument dedu
+ction/substitution 
+failed:
+.\src\QuantumCore.cpp:
+53:76: note:   
+mismatched types 
+'const 
+std::complex<_Tp>' 
+and 'double'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+                      
+          ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_sum_op<
+int, int>, const Eigen
+::CwiseBinaryOp<Eigen:
+:internal::scalar_sum_
+op<std::complex<double
+>, int>, const Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>, const 
+Eigen::CwiseBinaryOp<E
+igen::internal::scalar
+_product_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_s
+um_op<int, int>, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_sum_op<std::com
+plex<double>, int>, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, const Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_produc
+t_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > > 
+> Eigen::operator*(con
+st T&, const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+53:72: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int](k4)' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >') to type 
+'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::CwiseBinaryOp
+<Eigen::internal::scal
+ar_sum_op<int, int>, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_sum_op<std::com
+plex<double>, int>, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, const Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_produc
+t_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > > 
+>&}'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~^~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_sum_op<
+std::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_s
+um_op<std::complex<dou
+ble>, int>, const Eige
+n::Matrix<std::complex
+<double>, -1, -1>, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > > 
+> Eigen::operator*(con
+st T&, const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+53:72: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int](k4)' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >') to type 
+'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::CwiseBinaryOp
+<Eigen::internal::scal
+ar_sum_op<std::complex
+<double>, int>, const 
+Eigen::Matrix<std::com
+plex<double>, -1, 
+-1>, const Eigen::Cwis
+eBinaryOp<Eigen::inter
+nal::scalar_product_op
+<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > > 
+>&}'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~^~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<std
+::complex<double>, T, 
+Eigen::internal::has_R
+eturnType<Eigen::Scala
+rBinaryOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type, 
+std::complex<double> 
+>, const typename Eige
+n::internal::plain_con
+stant_type<Eigen::Matr
+ix<std::complex<double
+>, -1, -1>, typename E
+igen::internal::promot
+e_scalar_arg<std::comp
+lex<double>, T, Eigen:
+:internal::has_ReturnT
+ype<Eigen::ScalarBinar
+yOpTraits<T, 
+std::complex<double>, 
+Eigen::internal::scala
+r_product_op<T, 
+std::complex<double> 
+> > >::value>::type>::
+type, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1> > Eigen::o
+perator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+53:72: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int](k4)' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >') to type 
+'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1> >&}'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~^~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<int
+, T, Eigen::internal::
+has_ReturnType<Eigen::
+ScalarBinaryOpTraits<T
+, int, Eigen::internal
+::scalar_product_op<T,
+ int> > 
+>::value>::type, 
+int>, const typename E
+igen::internal::plain_
+constant_type<Eigen::C
+wiseBinaryOp<Eigen::in
+ternal::scalar_product
+_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> >, 
+typename Eigen::intern
+al::promote_scalar_arg
+<int, T, Eigen::intern
+al::has_ReturnType<Eig
+en::ScalarBinaryOpTrai
+ts<T, int, Eigen::inte
+rnal::scalar_product_o
+p<T, int> > >::value>:
+:type>::type, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_p
+roduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > > E
+igen::operator*(const 
+T&, const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+53:72: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int](k4)' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >') to type 
+'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::CwiseBinaryOp
+<Eigen::internal::scal
+ar_product_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > 
+>&}'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~^~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<dou
+ble, T, Eigen::interna
+l::has_ReturnType<Eige
+n::ScalarBinaryOpTrait
+s<T, double, Eigen::in
+ternal::scalar_product
+_op<T, double> > 
+>::value>::type, 
+double>, const 
+typename Eigen::intern
+al::plain_constant_typ
+e<Eigen::CwiseNullaryO
+p<Eigen::internal::sca
+lar_constant_op<double
+>, const 
+Eigen::Matrix<double, 
+-1, -1> >, typename Ei
+gen::internal::promote
+_scalar_arg<double, 
+T, Eigen::internal::ha
+s_ReturnType<Eigen::Sc
+alarBinaryOpTraits<T, 
+double, Eigen::interna
+l::scalar_product_op<T
+, double> > >::value>:
+:type>::type, const Ei
+gen::CwiseNullaryOp<Ei
+gen::internal::scalar_
+constant_op<double>, 
+const 
+Eigen::Matrix<double, 
+-1, -1> > > Eigen::ope
+rator*(const T&, 
+const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+53:72: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int](k4)' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >') to type 
+'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::CwiseNullaryO
+p<Eigen::internal::sca
+lar_constant_op<double
+>, const 
+Eigen::Matrix<double, 
+-1, -1> > >&}'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~^~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:19:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note: candidate: 
+template<class T> 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<type
+name Eigen::internal::
+promote_scalar_arg<dou
+ble, T, Eigen::interna
+l::has_ReturnType<Eige
+n::ScalarBinaryOpTrait
+s<T, double, Eigen::in
+ternal::scalar_product
+_op<T, double> > 
+>::value>::type, 
+double>, const 
+typename Eigen::intern
+al::plain_constant_typ
+e<Eigen::Matrix<double
+, -1, -1>, typename Ei
+gen::internal::promote
+_scalar_arg<double, 
+T, Eigen::internal::ha
+s_ReturnType<Eigen::Sc
+alarBinaryOpTraits<T, 
+double, Eigen::interna
+l::scalar_product_op<T
+, double> > >::value>:
+:type>::type, const 
+Eigen::Matrix<double, 
+-1, -1> > Eigen::opera
+tor*(const T&, const 
+StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+29: note:   template 
+argument deduction/sub
+stitution failed:
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+                      
+       ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Macros.h:1
+374:4: note: in 
+definition of macro 'E
+IGEN_MAKE_SCALAR_BINAR
+Y_OP_ONTHELEFT'
+   (METHOD)(const T& 
+scalar, const 
+StorageBaseType& 
+matrix) { \
+    ^~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:50:
+1: note: in expansion 
+of macro 'EIGEN_MAKE_S
+CALAR_BINARY_OP'
+ EIGEN_MAKE_SCALAR_BIN
+ARY_OP(operator*,produ
+ct)
+ ^~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+.\src\QuantumCore.cpp:
+53:72: note:   cannot 
+convert 'Eigen::Matrix
+Base<Derived>::operato
+r+(const Eigen::Matrix
+Base<OtherDerived>&) 
+const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int](k4)' (type 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<int, 
+std::complex<double> 
+>, const Eigen::CwiseB
+inaryOp<Eigen::interna
+l::scalar_sum_op<int, 
+int>, const Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_sum_op<st
+d::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1> >') to type 
+'const 
+StorageBaseType& {aka 
+const Eigen::MatrixBas
+e<Eigen::Matrix<double
+, -1, -1> >&}'
+     Matrix new_rho = 
+rho.data + (dt / 6.0) 
+* (k1 + 2.0 * k2 + 
+2.0 * k3 + k4);
+                      
+                      
+  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~^~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:164:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\src\QuantumCore.cpp:
+1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/CwiseBinaryOp.h
+: In instantiation of 
+'Eigen::CwiseBinaryOp<
+BinaryOp, Lhs, Rhs>::C
+wiseBinaryOp(const 
+Lhs&, const Rhs&, 
+const BinaryOp&) 
+[with BinaryOp = Eigen
+::internal::scalar_sum
+_op<std::complex<doubl
+e>, int>; LhsType = 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>; RhsType = 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> >; Ei
+gen::CwiseBinaryOp<Bin
+aryOp, Lhs, Rhs>::Lhs 
+= Eigen::Matrix<std::c
+omplex<double>, -1, 
+-1>; Eigen::CwiseBinar
+yOp<BinaryOp, Lhs, 
+Rhs>::Rhs = Eigen::Cwi
+seBinaryOp<Eigen::inte
+rnal::scalar_product_o
+p<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> >]':
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:27:
+1:   required from 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<typenam
+e Eigen::internal::tra
+its<T>::Scalar, 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar>, const 
+Derived, const 
+OtherDerived> Eigen::M
+atrixBase<Derived>::op
+erator+(const Eigen::M
+atrixBase<OtherDerived
+>&) const [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_produc
+t_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> >; 
+Derived = Eigen::Matri
+x<std::complex<double>
+, -1, -1>; typename Ei
+gen::internal::traits<
+OtherDerived>::Scalar 
+= int; typename Eigen:
+:internal::traits<T>::
+Scalar = 
+std::complex<double>]'
+.\src\QuantumCore.cpp:
+49:51:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/StaticAsse
+rt.h:33:40: error: 
+static assertion 
+failed: YOU_MIXED_DIFF
+ERENT_NUMERIC_TYPES__Y
+OU_NEED_TO_USE_THE_CAS
+T_METHOD_OF_MATRIXBASE
+_TO_CAST_NUMERIC_TYPES
+_EXPLICITLY
+     #define EIGEN_STA
+TIC_ASSERT(X,MSG) 
+static_assert(X,#MSG);
+                      
+                  ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/XprHelper.
+h:851:3: note: in 
+expansion of macro 
+'EIGEN_STATIC_ASSERT'
+   EIGEN_STATIC_ASSERT
+((Eigen::internal::has
+_ReturnType<ScalarBina
+ryOpTraits<LHS, 
+RHS,BINOP> >::value), 
+\
+   ^~~~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/CwiseBinaryOp.h
+:113:7: note: in 
+expansion of macro 'EI
+GEN_CHECK_BINARY_COMPA
+TIBILIY'
+       EIGEN_CHECK_BIN
+ARY_COMPATIBILIY(Binar
+yOp,typename 
+Lhs::Scalar,typename 
+Rhs::Scalar);
+       ^~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/CwiseBinaryOp.h
+: In instantiation of 
+'Eigen::CwiseBinaryOp<
+BinaryOp, Lhs, Rhs>::C
+wiseBinaryOp(const 
+Lhs&, const Rhs&, 
+const BinaryOp&) 
+[with BinaryOp = Eigen
+::internal::scalar_sum
+_op<int, 
+std::complex<double> 
+>; LhsType = const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_su
+m_op<int, int>, const 
+Eigen::CwiseBinaryOp<E
+igen::internal::scalar
+_sum_op<std::complex<d
+ouble>, int>, const Ei
+gen::Matrix<std::compl
+ex<double>, -1, -1>, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+RhsType = const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1>; Eigen
+::CwiseBinaryOp<Binary
+Op, Lhs, Rhs>::Lhs = E
+igen::CwiseBinaryOp<Ei
+gen::internal::scalar_
+sum_op<int, int>, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_sum_op<std::com
+plex<double>, int>, 
+const Eigen::Matrix<st
+d::complex<double>, 
+-1, -1>, const Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_produc
+t_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+Eigen::CwiseBinaryOp<B
+inaryOp, Lhs, 
+Rhs>::Rhs = Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>]':
+.\eigen-3.4.0/Eigen/sr
+c/Core/../plugins/Comm
+onCwiseBinaryOps.h:27:
+1:   required from 
+'const Eigen::CwiseBin
+aryOp<Eigen::internal:
+:scalar_sum_op<typenam
+e Eigen::internal::tra
+its<T>::Scalar, 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar>, const 
+Derived, const 
+OtherDerived> Eigen::M
+atrixBase<Derived>::op
+erator+(const Eigen::M
+atrixBase<OtherDerived
+>&) const [with 
+OtherDerived = Eigen::
+Matrix<std::complex<do
+uble>, -1, -1>; 
+Derived = Eigen::Cwise
+BinaryOp<Eigen::intern
+al::scalar_sum_op<int,
+ int>, const Eigen::Cw
+iseBinaryOp<Eigen::int
+ernal::scalar_sum_op<s
+td::complex<double>, 
+int>, const Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>, const Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_pr
+oduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+typename Eigen::intern
+al::traits<OtherDerive
+d>::Scalar = 
+std::complex<double>; 
+typename Eigen::intern
+al::traits<T>::Scalar 
+= int]'
+.\src\QuantumCore.cpp:
+53:74:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/StaticAsse
+rt.h:33:40: error: 
+static assertion 
+failed: YOU_MIXED_DIFF
+ERENT_NUMERIC_TYPES__Y
+OU_NEED_TO_USE_THE_CAS
+T_METHOD_OF_MATRIXBASE
+_TO_CAST_NUMERIC_TYPES
+_EXPLICITLY
+     #define EIGEN_STA
+TIC_ASSERT(X,MSG) 
+static_assert(X,#MSG);
+                      
+                  ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/XprHelper.
+h:851:3: note: in 
+expansion of macro 
+'EIGEN_STATIC_ASSERT'
+   EIGEN_STATIC_ASSERT
+((Eigen::internal::has
+_ReturnType<ScalarBina
+ryOpTraits<LHS, 
+RHS,BINOP> >::value), 
+\
+   ^~~~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/CwiseBinaryOp.h
+:113:7: note: in 
+expansion of macro 'EI
+GEN_CHECK_BINARY_COMPA
+TIBILIY'
+       EIGEN_CHECK_BIN
+ARY_COMPATIBILIY(Binar
+yOp,typename 
+Lhs::Scalar,typename 
+Rhs::Scalar);
+       ^~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/AssignEvaluator
+.h: In instantiation 
+of 'void Eigen::intern
+al::call_assignment_no
+_alias(Dst&, const 
+Src&, const Func&) 
+[with Dst = Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>; Src = Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_su
+m_op<std::complex<doub
+le>, 
+std::complex<double> 
+>, const Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> >; 
+Func = Eigen::internal
+::assign_op<std::compl
+ex<double>, int>]':
+.\eigen-3.4.0/Eigen/sr
+c/Core/PlainObjectBase
+.h:797:41:   required 
+from 'Derived& Eigen::
+PlainObjectBase<Derive
+d>::_set_noalias(const
+ Eigen::DenseBase<Othe
+rDerived>&) [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_sum_op
+<std::complex<double>,
+ std::complex<double> 
+>, const Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> >; 
+Derived = Eigen::Matri
+x<std::complex<double>
+, -1, -1>]'
+.\eigen-3.4.0/Eigen/sr
+c/Core/PlainObjectBase
+.h:594:7:   required 
+from 'Eigen::PlainObje
+ctBase<Derived>::Plain
+ObjectBase(const Eigen
+::DenseBase<OtherDeriv
+ed>&) [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_sum_op
+<std::complex<double>,
+ std::complex<double> 
+>, const Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> >; 
+Derived = Eigen::Matri
+x<std::complex<double>
+, -1, -1>]'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Matrix.h:423:29
+:   required from 'Eig
+en::Matrix<_Scalar, 
+_Rows, _Cols, 
+_Options, _MaxRows, _M
+axCols>::Matrix(const 
+Eigen::EigenBase<Other
+Derived>&) [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_sum_op
+<std::complex<double>,
+ std::complex<double> 
+>, const Eigen::Matrix
+<std::complex<double>,
+ -1, -1>, const Eigen:
+:Matrix<std::complex<d
+ouble>, -1, -1> >; 
+_Scalar = 
+std::complex<double>; 
+int _Rows = -1; int 
+_Cols = -1; int 
+_Options = 0; int 
+_MaxRows = -1; int 
+_MaxCols = -1]'
+.\src\QuantumCore.cpp:
+44:25:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/StaticAsse
+rt.h:33:40: error: 
+static assertion 
+failed: YOU_MIXED_DIFF
+ERENT_NUMERIC_TYPES__Y
+OU_NEED_TO_USE_THE_CAS
+T_METHOD_OF_MATRIXBASE
+_TO_CAST_NUMERIC_TYPES
+_EXPLICITLY
+     #define EIGEN_STA
+TIC_ASSERT(X,MSG) 
+static_assert(X,#MSG);
+                      
+                  ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/XprHelper.
+h:851:3: note: in 
+expansion of macro 
+'EIGEN_STATIC_ASSERT'
+   EIGEN_STATIC_ASSERT
+((Eigen::internal::has
+_ReturnType<ScalarBina
+ryOpTraits<LHS, 
+RHS,BINOP> >::value), 
+\
+   ^~~~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/AssignEvaluator
+.h:888:3: note: in 
+expansion of macro 'EI
+GEN_CHECK_BINARY_COMPA
+TIBILIY'
+   EIGEN_CHECK_BINARY_
+COMPATIBILIY(Func,type
+name ActualDstTypeClea
+ned::Scalar,typename 
+Src::Scalar);
+   ^~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/AssignEvaluator
+.h: In instantiation 
+of 'void Eigen::intern
+al::call_assignment_no
+_alias(Dst&, const 
+Src&, const Func&) 
+[with Dst = Eigen::Mat
+rix<std::complex<doubl
+e>, -1, -1>; Src = Eig
+en::CwiseBinaryOp<Eige
+n::internal::scalar_su
+m_op<std::complex<doub
+le>, int>, const Eigen
+::Matrix<std::complex<
+double>, -1, -1>, 
+const Eigen::CwiseBina
+ryOp<Eigen::internal::
+scalar_product_op<doub
+le, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+Func = Eigen::internal
+::assign_op<std::compl
+ex<double>, int>]':
+.\eigen-3.4.0/Eigen/sr
+c/Core/PlainObjectBase
+.h:797:41:   required 
+from 'Derived& Eigen::
+PlainObjectBase<Derive
+d>::_set_noalias(const
+ Eigen::DenseBase<Othe
+rDerived>&) [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_sum_op
+<std::complex<double>,
+ int>, const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_p
+roduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+Derived = Eigen::Matri
+x<std::complex<double>
+, -1, -1>]'
+.\eigen-3.4.0/Eigen/sr
+c/Core/PlainObjectBase
+.h:594:7:   required 
+from 'Eigen::PlainObje
+ctBase<Derived>::Plain
+ObjectBase(const Eigen
+::DenseBase<OtherDeriv
+ed>&) [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_sum_op
+<std::complex<double>,
+ int>, const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_p
+roduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+Derived = Eigen::Matri
+x<std::complex<double>
+, -1, -1>]'
+.\eigen-3.4.0/Eigen/sr
+c/Core/Matrix.h:423:29
+:   required from 'Eig
+en::Matrix<_Scalar, 
+_Rows, _Cols, 
+_Options, _MaxRows, _M
+axCols>::Matrix(const 
+Eigen::EigenBase<Other
+Derived>&) [with 
+OtherDerived = Eigen::
+CwiseBinaryOp<Eigen::i
+nternal::scalar_sum_op
+<std::complex<double>,
+ int>, const Eigen::Ma
+trix<std::complex<doub
+le>, -1, -1>, const Ei
+gen::CwiseBinaryOp<Eig
+en::internal::scalar_p
+roduct_op<double, 
+std::complex<double> 
+>, const Eigen::CwiseN
+ullaryOp<Eigen::intern
+al::scalar_constant_op
+<double>, const 
+Eigen::Matrix<double, 
+-1, -1> >, const Eigen
+::Matrix<std::complex<
+double>, -1, -1> > >; 
+_Scalar = 
+std::complex<double>; 
+int _Rows = -1; int 
+_Cols = -1; int 
+_Options = 0; int 
+_MaxRows = -1; int 
+_MaxCols = -1]'
+.\src\QuantumCore.cpp:
+49:53:   required 
+from here
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/StaticAsse
+rt.h:33:40: error: 
+static assertion 
+failed: YOU_MIXED_DIFF
+ERENT_NUMERIC_TYPES__Y
+OU_NEED_TO_USE_THE_CAS
+T_METHOD_OF_MATRIXBASE
+_TO_CAST_NUMERIC_TYPES
+_EXPLICITLY
+     #define EIGEN_STA
+TIC_ASSERT(X,MSG) 
+static_assert(X,#MSG);
+                      
+                  ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/XprHelper.
+h:851:3: note: in 
+expansion of macro 
+'EIGEN_STATIC_ASSERT'
+   EIGEN_STATIC_ASSERT
+((Eigen::internal::has
+_ReturnType<ScalarBina
+ryOpTraits<LHS, 
+RHS,BINOP> >::value), 
+\
+   ^~~~~~~~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/AssignEvaluator
+.h:888:3: note: in 
+expansion of macro 'EI
+GEN_CHECK_BINARY_COMPA
+TIBILIY'
+   EIGEN_CHECK_BINARY_
+COMPATIBILIY(Func,type
+name ActualDstTypeClea
+ned::Scalar,typename 
+Src::Scalar);
+   ^~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:162:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\tests\test_quantum.c
+pp:1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:504
+:25: error: 
+'invoke_result' in 
+namespace 'std' does 
+not name a template 
+type
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+   ^~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:504
+:38: error: expected 
+unqualified-id before 
+'<' token
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+                ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:505
+:31: error: 'type1' 
+was not declared in 
+this scope
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+         ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:505
+:36: error: template 
+argument 1 is invalid
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+              ^
+In file included from 
+.\eigen-3.4.0/Eigen/Co
+re:162:0,
+                 from 
+.\eigen-3.4.0/Eigen/De
+nse:1,
+                 from 
+.\include/QuantumCore.
+h:4,
+                 from 
+.\tests\test_quantum.c
+pp:1:
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:616
+:25: error: 
+'invoke_result' in 
+namespace 'std' does 
+not name a template 
+type
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+   ^~~~~~~~~~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:616
+:38: error: expected 
+unqualified-id before 
+'<' token
+   typedef typename 
+std::invoke_result<F, 
+ArgTypes...>::type 
+type1;
+                      
+                ^
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:617
+:31: error: 'type1' 
+was not declared in 
+this scope
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+         ^~~~~
+.\eigen-3.4.0/Eigen/sr
+c/Core/util/Meta.h:617
+:36: error: template 
+argument 1 is invalid
+   typedef typename re
+move_all<type1>::type 
+type;
+                      
+              ^

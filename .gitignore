@@ -1,0 +1,16 @@
+# CMake
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Executables and objects
+*.exe
+*.o
+*.obj
+*.out
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
