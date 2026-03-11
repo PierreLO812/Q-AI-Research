@@ -1,0 +1,16 @@
+.\src\PythonBridge.cpp: In static member function 'static std::__cxx11::string q_engine::PythonBridge::exec_python_script(const string&)':
+.\src\PythonBridge.cpp:16:37: error: '_pclose' was not declared in this scope
+     std::unique_ptr<FILE, decltype(&_pclose)> pipe(_popen(command.c_str(), "r"), _pclose);
+                                     ^~~~~~~
+.\src\PythonBridge.cpp:16:45: error: template argument 2 is invalid
+     std::unique_ptr<FILE, decltype(&_pclose)> pipe(_popen(command.c_str(), "r"), _pclose);
+                                             ^
+.\src\PythonBridge.cpp:16:79: error: '_popen' was not declared in this scope
+     std::unique_ptr<FILE, decltype(&_pclose)> pipe(_popen(command.c_str(), "r"), _pclose);
+                                                                               ^
+.\src\PythonBridge.cpp:16:89: error: expression list treated as compound expression in initializer [-fpermissive]
+     std::unique_ptr<FILE, decltype(&_pclose)> pipe(_popen(command.c_str(), "r"), _pclose);
+                                                                                         ^
+.\src\PythonBridge.cpp:24:53: error: request for member 'get' in 'pipe', which is of non-class type 'int'
+     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+                                                     ^~~

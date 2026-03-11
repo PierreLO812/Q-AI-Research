@@ -1,7 +1,7 @@
 # Q-Engine Discovery Report
 
 ## Target Hypothesis
-> est ce que le signal survit a 2G de pression sur 100m de fibre
+> test qiskit worker connection
 
 ## Status Conclusion
 **[AFFIRMÉE]** La théorie quantique proposée est valide formellement.
@@ -28,7 +28,7 @@ Le schéma dynamique de l'état quantique a été généré et sauvegardé sous 
 ```json
 {
   "engine": "Q-Engine C++",
-  "hypothesis_processed": "est ce que le signal survit a 2G de pression sur 100m de fibre",
+  "hypothesis_processed": "test qiskit worker connection",
   "results": {
     "is_verified_mathematically": true,
     "confidence_score": 99.9,

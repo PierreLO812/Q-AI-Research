@@ -15,6 +15,7 @@
 #include "NLParser.h"
 #include "ConstraintBuilder.h"
 #include "Z3Validator.h"
+#include "PythonBridge.h"
 
 #include <iostream>
 #include <fstream>
@@ -98,7 +99,7 @@ int main(int argc, char** argv) {
         std::cout << " -> No specific macroscopic constraints found, using default quantum baseline." << std::endl;
     }
 
-    std::cout << "[2/6] Running Physics Simulation (Lindblad) with noise level \gamma = " << gamma_noise << "..." << std::endl;
+    std::cout << "[2/6] Running Physics Simulation (Lindblad) with noise level \\gamma = " << gamma_noise << "..." << std::endl;
     // Here we technically pass gamma_noise to the Lindblad solver: 
     // QuantumCore::solve_lindblad(rho_initial, H, kraus_ops, gamma_noise, t_end);
     
@@ -115,8 +116,12 @@ int main(int argc, char** argv) {
         "2*x - x^2"            // Leads to Negative Probabilities
     };
 
-    // Assume it finds x^2 + x as the best fit to the simulated data after exploring
-    ExprPtr discovered_law = make_add(make_square(make_var("x")), make_var("x"));
+    // AI-Hilbert + SINDy Worker
+    // Now we delegate specifically the sparse symbolic regression to a PySINDy worker
+    std::cout << "\n[4/6] Offloading High-Dimensional Regression to Python (PySINDy Worker)..." << std::endl;
+    // C++ calls Python bridge and waits for the expression (AST)
+    ExprPtr discovered_law = PythonBridge::execute_worker_sindy("workers/worker_sindy.py", "{\"matrix_data\": [0.5, 0.2]}");
+
     bool is_sos = CertificateSOS::verify(discovered_law);
     
     std::cout << "\n[4.5/6] Verifying Modulo Theories logical bounds via Z3 C++ Solver..." << std::endl;
