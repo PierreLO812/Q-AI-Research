@@ -15,7 +15,7 @@ FetchContent_MakeAvailable(eigen)
 # --- Z3 Native (Phase 8 Master Mode) ---
 # We mock Z3 bindings, no Pybind11 anymore as C++ is the absolute master orchestrator
 
-add_library(q_engine src/QuantumCore.cpp src/AutoDiff.cpp src/Symbolic.cpp src/AlHilbert.cpp src/Positivstellensatz.cpp src/ErrorClassifier.cpp src/KnowledgeGraph.cpp src/ActiveInference.cpp src/LeanTranslator.cpp src/LeanInterface.cpp src/RLVR_Agent.cpp src/SchemaGenerator.cpp src/MCPBridge.cpp src/NLParser.cpp src/ConstraintBuilder.cpp src/Z3Validator.cpp src/PythonBridge.cpp)
+add_library(q_engine src/QuantumCore.cpp src/AutoDiff.cpp src/Symbolic.cpp src/AlHilbert.cpp src/Positivstellensatz.cpp src/ErrorClassifier.cpp src/KnowledgeGraph.cpp src/ActiveInference.cpp src/LeanTranslator.cpp src/LeanInterface.cpp src/RLVR_Agent.cpp src/SchemaGenerator.cpp src/MCPBridge.cpp src/NLParser.cpp src/ConstraintBuilder.cpp src/Z3Validator.cpp src/PythonBridge.cpp src/DimensionalAnalysis.cpp)
 target_include_directories(q_engine PUBLIC include)
 target_link_libraries(q_engine PUBLIC Eigen3::Eigen)
 
