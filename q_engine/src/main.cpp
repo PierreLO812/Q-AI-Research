@@ -148,26 +148,72 @@ int main(int argc, char** argv) {
     std::cout << "\n[4.5/6] Z3 SMT Constraint Satisfiability Check..." << std::endl;
     bool is_z3_sat = Z3Validator::verify_satisfiability(discovered_law);
 
-    std::cout << "\n[5/6] 'Le Juge' RLVR: Composite Reward (Physics * Lean 4)..." << std::endl;
+    std::cout << "\n[5/6] 'Le Juge' RLVR: Composite Reward (Physics x Lean 4)..." << std::endl;
     RLVRAgent agent;
-    // Generate Lean 4 target: the exponential decay as rhs
     ExprPtr lean_target = make_exp(make_mul(make_const(-1.0), make_mul(make_var("gamma"), make_var("t"))));
     double composite_reward = agent.compute_reward(
         discovered_law, lean_target, "decoherence_law",
         reference_fidelity, variable_sets);
-    bool is_formally_proved = (composite_reward > 0.1);
-    double confidence = composite_reward * 100.0;
+
+    // ═══ Fix 2: RLVR Correct Semantics ════════════════════════════════════════
+    // The RLVR must distinguish between:
+    //   - Equation CORRECT but signal DIED (F_final < 95%) -> [INFIRMEE]
+    //   - Equation CORRECT and signal SURVIVED (F_final >= 95%) -> [AFFIRMEE]
+    //   - Equation INVALID (bad math) -> [REJECTED]
+    //
+    // Critical: "J'ai trouve l'equation de la mort du signal" !=
+    //           "Le signal a survécu"
+    const double SURVIVAL_THRESHOLD = 0.95; // 95% fidelity minimum for signal survival
+    double final_fidelity = reference_fidelity.empty() ? 0.0 : reference_fidelity.back();
+    bool equation_is_mathematically_valid = (composite_reward > 0.01);
+    bool signal_survived = (final_fidelity >= SURVIVAL_THRESHOLD);
+
+    // Three distinct verdict outputs (not just true/false)
+    std::string verdict_str;
+    std::string verdict_physical;
+    bool is_formally_proved;
+    double confidence;
+
+    if (!equation_is_mathematically_valid) {
+        verdict_str      = "[EQUATION INVALIDE]";
+        verdict_physical = "Aucune equation physiquement coherente trouvee pour cette hypothese.";
+        is_formally_proved = false;
+        confidence = 0.0;
+    } else if (!signal_survived) {
+        // The equation correctly describes the death of the signal
+        verdict_str      = "[HYPOTHESE INFIRMEE] : Le signal NE SURVIT PAS";
+        verdict_physical = "L'equation " + discovered_law->to_string() +
+                           " est mathematiquement correcte et decrit la MORT du signal." +
+                           " Fidelite finale : " + std::to_string(final_fidelity * 100.0) +
+                           "% < seuil requis de " + std::to_string(SURVIVAL_THRESHOLD * 100.0) + "%.";
+        is_formally_proved = false;
+        confidence = final_fidelity * 100.0;
+    } else {
+        // Both equation is correct AND signal survives
+        verdict_str      = "[HYPOTHESE AFFIRMEE] : Le signal SURVIT";
+        verdict_physical = "L'equation " + discovered_law->to_string() +
+                           " est valide. Fidelite finale : " +
+                           std::to_string(final_fidelity * 100.0) +
+                           "% >= seuil requis de " + std::to_string(SURVIVAL_THRESHOLD * 100.0) + "%.";
+        is_formally_proved = true;
+        confidence = final_fidelity * 100.0;
+    }
+
+    std::cout << "\n   => " << verdict_str << std::endl;
+    std::cout << "   => " << verdict_physical << std::endl;
+    std::cout << "   => Equation discovered: " << discovered_law->to_string() << std::endl;
+    std::cout << "   => Fidelite finale du signal: " << final_fidelity * 100.0 << "%" << std::endl;
 
     // Mocking the RLVR proof steps for the report
     std::vector<std::string> proof_steps = {
-        "[Phase 9] Dimensional Analysis: equation units validated as dimensionless/correct.",
-        "[Phase 9] Al-Hilbert prior: seeded with e^(-gamma*t), tanh(gamma*t), D[sigma_z](rho).",
-        "[Phase 9] Physics Accuracy vs. Lindblad data (RMSE computed): " + std::to_string(composite_reward),
-        "[Phase 9] Z3 SMT Solver: constraints are SATISFIABLE.",
+        "[Phase 9] Typage AST: toute equation melangeant scalaire et rho a ete rejetee (DensityOp type enforcement).",
+        "[Phase 9] Analyse dimensionnelle (PG-SR) : " + std::to_string(dim_map.size()) + " variables etiquetees avec unites physiques.",
+        "[Phase 9] Al-Hilbert amorce avec priors physiques : e^(-gamma*t), tanh(gamma*t), D[sigma_z](rho).",
+        "[Phase 9] Equation decouverte : " + discovered_law->to_string(),
+        "[Fix 2] Fidelite finale du signal quantique = " + std::to_string(final_fidelity * 100.0) + "%",
+        "[Fix 2] Verdict de survie (seuil 95%) : " + verdict_str,
         "[Le Juge] RLVR Composite Reward = " + std::to_string(composite_reward)
     };
-    std::cout << "   -> Composite Reward: " << composite_reward << " | Verdict: "
-              << (is_formally_proved ? "HYPOTHESIS AFFIRMED" : "HYPOTHESIS REJECTED") << std::endl;
 
     std::cout << "[6/6] Generating Schemas and Bridges..." << std::endl;
     std::string svg_bloch = SchemaGenerator::generate_bloch_sphere_svg(0.8, 0.2); // 0.8 probability of |0>

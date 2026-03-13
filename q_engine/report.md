@@ -1,19 +1,15 @@
 # Q-Engine Discovery Report
 
 ## Target Hypothesis
-> est ce que le signal survit a 2G de pression sur 100m de fibre
+> signal survit a 2G de pression sur 100m de fibre
 
 ## Status Conclusion
-**[AFFIRMÉE]** La théorie quantique proposée est valide formellement.
-- **Confidence Rating:** 83.8819%
-- **Extracted Equation:** `(tanh((4.361548 - rho))^2)`
+**[INFIRMÉE]** La théorie est instable et a été rejetée par le solveur Positivstellensatz / Lean 4.
+- **Confidence Rating:** 72.9789%
+- **Extracted Equation:** `((-3.590758 * gamma)†^2)`
 
 ## Preuve Mathématique (Étapes Lean 4)
-1. [Phase 9] Dimensional Analysis: equation units validated as dimensionless/correct.
-1. [Phase 9] Al-Hilbert prior: seeded with e^(-gamma*t), tanh(gamma*t), D[sigma_z](rho).
-1. [Phase 9] Physics Accuracy vs. Lindblad data (RMSE computed): 0.838819
-1. [Phase 9] Z3 SMT Solver: constraints are SATISFIABLE.
-1. [Le Juge] RLVR Composite Reward = 0.838819
+*La preuve formelle a échoué. Lean 4 a rejeté l'arbre syntaxique.*
 
 ## Historique des Impasses (Inférence Active)
 Le moteur a exploré et physiquement invalidé les équations intermédiaires suivantes avant d'arriver à la conclusion :
@@ -27,12 +23,12 @@ Le schéma dynamique de l'état quantique a été généré et sauvegardé sous 
 ```json
 {
   "engine": "Q-Engine C++",
-  "hypothesis_processed": "est ce que le signal survit a 2G de pression sur 100m de fibre",
+  "hypothesis_processed": "signal survit a 2G de pression sur 100m de fibre",
   "results": {
-    "is_verified_mathematically": true,
-    "confidence_score": 83.8819,
-    "discovered_equation": "(tanh((4.361548 - rho))^2)",
-    "rejection_reason": null
+    "is_verified_mathematically": false,
+    "confidence_score": 72.9789,
+    "discovered_equation": "((-3.590758 * gamma)†^2)",
+    "rejection_reason": "Lean 4: Unsolved goals or failed tactic."
   }
 }
 

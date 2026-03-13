@@ -32,8 +32,16 @@ ExprPtr AlHilbertCore::random_expr(int depth) {
     int op = op_dist(gen);
 
     // ─── Classical arithmetic ─────────────────────────
-    if (op == 0) return make_add(random_expr(depth - 1), random_expr(depth - 1));
-    if (op == 1) return make_sub(random_expr(depth - 1), random_expr(depth - 1));
+    if (op == 0) {
+        // ADD: safe for scalars, must not mix with ρ — catch the type error
+        try { return make_add(random_expr(depth - 1), random_expr(depth - 1)); }
+        catch (const std::exception&) { return make_exp(make_mul(make_const(-1.0), make_var("gamma"))); }
+    }
+    if (op == 1) {
+        // SUB: type-enforced; if rho is subtracted from scalar, it throws
+        try { return make_sub(random_expr(depth - 1), random_expr(depth - 1)); }
+        catch (const std::exception&) { return make_var("gamma"); } // fallback to scalar
+    }
     if (op == 2) return make_mul(random_expr(depth - 1), random_expr(depth - 1));
     if (op == 3) return make_square(random_expr(depth - 1));
 

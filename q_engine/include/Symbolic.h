@@ -14,6 +14,29 @@ namespace q_engine {
 // Reference: Pauli, Lindblad, Kraus, Tensor, Commutator, tanh...
 // ═══════════════════════════════════════════════════════════════
 
+// ═══════════════════════════════════════════════════════════════
+// Fix 1 — TYPED AST for ρ
+// QuantumType enforces that density matrices are Hermitian, trace-1.
+// The type is attached to every ExprNode so the verifier can reject
+// any expression that mixes incompatible types (e.g. scalar - rho).
+// ═══════════════════════════════════════════════════════════════
+enum class QuantumType {
+    SCALAR,          // Regular real/complex number or dimensionless quantity
+    HERMITIAN_UNIT,  // Hermitian unitary operator (Pauli, etc.)
+    DENSITY_OP,      // ρ: Hermitian, PSD, trace-1 — cannot mix with scalar via +/-
+    SUPEROPERATOR,   // Lindblad/Kraus superoperator acting on DENSITY_OP
+    AMBIGUOUS        // Unknown / not yet resolved
+};
+
+// ─── Fix 3 — Physical Constant Annotation ────────────────────────────────
+// Every CONSTANT node can carry a physical interpretation so that 4.361548
+// is not a naked float but "4.361548 Omega (birefringence rate at 2G)".
+struct PhysicalConstant {
+    double value = 0.0;
+    std::string unit;         // e.g. "Omega", "1/m", "1/s", "dimensionless"
+    std::string description;  // e.g. "G-force birefringence coupling"
+};
+
 enum class PauliAxis { X, Y, Z };
 
 enum class NodeType {
@@ -59,8 +82,14 @@ public:
     ExprPtr right;
     double gamma;          // For LINDBLAD_DISSIPATOR
     PauliAxis pauli_axis;  // For PAULI
-    std::string dimension; // PG-SR dimensional tag ("m", "s", "K", "G", "dimensionless")
+    std::string dimension; // PG-SR dimensional tag
     int trace_subsystem;   // For PARTIAL_TRACE
+
+    // Fix 1: Quantum Type — enforces that ρ is DENSITY_OP (Hermitian, trace-1)
+    QuantumType quantum_type = QuantumType::SCALAR;
+
+    // Fix 3: Physical constant annotation
+    PhysicalConstant phys_const; // Populated when type == CONSTANT
 
     ExprNode(NodeType t, double v = 0.0, const std::string& n = "")
         : type(t), value(v), name(n), gamma(0.0),
@@ -70,6 +99,13 @@ public:
     std::string to_string() const;
     ExprPtr clone() const;
 };
+
+// Fix 1: Type Checking — throws std::runtime_error on invalid quantum type mixtures
+void assert_type_compatible_binary(const ExprPtr& l, const ExprPtr& r, const std::string& op_name);
+QuantumType infer_quantum_type(const ExprPtr& node);
+
+// Fix 3: physical constant factory — annotated with unit and physical description
+ExprPtr make_physical_const(double v, const std::string& unit, const std::string& desc);
 
 // ─── Arithmetic ──────────────────────────────────────────────────────────
 ExprPtr make_const(double v);

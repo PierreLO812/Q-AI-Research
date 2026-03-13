@@ -66,7 +66,12 @@ double ExprNode::evaluate(const std::map<std::string, double>& variables) const 
 // ═══════════════════════════════════════════════════════════════════
 std::string ExprNode::to_string() const {
     switch (type) {
-        case NodeType::CONSTANT:   return std::to_string(value);
+        case NodeType::CONSTANT:
+            // Fix 3: Include physical unit in to_string if annotated
+            if (!phys_const.unit.empty()) {
+                return std::to_string(value) + " [" + phys_const.unit + "] (" + phys_const.description + ")";
+            }
+            return std::to_string(value);
         case NodeType::VARIABLE:   return name;
         case NodeType::ADD:        return "(" + left->to_string() + " + " + right->to_string() + ")";
         case NodeType::SUB:        return "(" + left->to_string() + " - " + right->to_string() + ")";
@@ -95,13 +100,59 @@ std::string ExprNode::to_string() const {
 
 ExprPtr ExprNode::clone() const {
     auto c = std::make_shared<ExprNode>(type, value, name);
-    c->gamma       = gamma;
-    c->pauli_axis  = pauli_axis;
-    c->dimension   = dimension;
+    c->gamma        = gamma;
+    c->pauli_axis   = pauli_axis;
+    c->dimension    = dimension;
+    c->quantum_type = quantum_type;
+    c->phys_const   = phys_const;
     c->trace_subsystem = trace_subsystem;
     if (left)  c->left  = left->clone();
     if (right) c->right = right->clone();
     return c;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Fix 1: Quantum Type Inference and Enforcement
+// ═══════════════════════════════════════════════════════════════
+QuantumType infer_quantum_type(const ExprPtr& node) {
+    if (!node) return QuantumType::AMBIGUOUS;
+    switch (node->type) {
+        case NodeType::DENSITY_MATRIX:       return QuantumType::DENSITY_OP;
+        case NodeType::PAULI:                return QuantumType::HERMITIAN_UNIT;
+        case NodeType::LINDBLAD_DISSIPATOR:  return QuantumType::SUPEROPERATOR;
+        case NodeType::KRAUS_CHANNEL:        return QuantumType::SUPEROPERATOR;
+        case NodeType::COMMUTATOR:           return QuantumType::HERMITIAN_UNIT;
+        case NodeType::ANTICOMMUTATOR:       return QuantumType::HERMITIAN_UNIT;
+        case NodeType::DAGGER:               return infer_quantum_type(node->left);
+        case NodeType::TENSOR_PRODUCT:       return QuantumType::HERMITIAN_UNIT;
+        case NodeType::PARTIAL_TRACE:        return QuantumType::SCALAR; // Trace → scalar
+        case NodeType::CONSTANT:             return QuantumType::SCALAR;
+        case NodeType::VARIABLE:             return QuantumType::SCALAR;
+        case NodeType::EXP:
+        case NodeType::TANH:
+        case NodeType::COMPLEX_EXP:          return QuantumType::SCALAR;
+        default:                             return QuantumType::AMBIGUOUS;
+    }
+}
+
+void assert_type_compatible_binary(const ExprPtr& l, const ExprPtr& r, const std::string& op_name) {
+    if (!l || !r) return;
+    auto tl = infer_quantum_type(l);
+    auto tr = infer_quantum_type(r);
+
+    // CRITICAL: Cannot add/subtract a scalar and a density matrix
+    bool l_is_density = (tl == QuantumType::DENSITY_OP);
+    bool r_is_density = (tr == QuantumType::DENSITY_OP);
+    bool l_is_scalar  = (tl == QuantumType::SCALAR);
+    bool r_is_scalar  = (tr == QuantumType::SCALAR);
+
+    if ((l_is_density && r_is_scalar) || (l_is_scalar && r_is_density)) {
+        throw std::runtime_error(
+            "[AST TYPE ERROR] Operation '" + op_name +
+            "' is illegal: cannot mix a density matrix rho (Hermitian, trace-1) "
+            "with a scalar. The equation is physically meaningless and rejected."
+        );
+    }
 }
 
 // ─── Arithmetic ──────────────────────────────────────────────────────────
@@ -111,10 +162,13 @@ ExprPtr make_var(const std::string& n, const std::string& dim) {
     e->dimension = dim;
     return e;
 }
+// Fix 1: Type-aware binary operations — validate before constructing
 ExprPtr make_add(ExprPtr l, ExprPtr r) {
+    assert_type_compatible_binary(l, r, "+");
     auto n = std::make_shared<ExprNode>(NodeType::ADD); n->left = l; n->right = r; return n;
 }
 ExprPtr make_sub(ExprPtr l, ExprPtr r) {
+    assert_type_compatible_binary(l, r, "-");
     auto n = std::make_shared<ExprNode>(NodeType::SUB); n->left = l; n->right = r; return n;
 }
 ExprPtr make_mul(ExprPtr l, ExprPtr r) {
@@ -169,6 +223,13 @@ ExprPtr make_kraus_channel(ExprPtr K, ExprPtr rho) {
 // ─── State ───────────────────────────────────────────────────────────────
 ExprPtr make_density_matrix(const std::string& label) {
     return std::make_shared<ExprNode>(NodeType::DENSITY_MATRIX, 0.0, label);
+}
+
+// Fix 3: Annotated physical constant factory
+ExprPtr make_physical_const(double v, const std::string& unit, const std::string& desc) {
+    auto n = std::make_shared<ExprNode>(NodeType::CONSTANT, v);
+    n->phys_const = {v, unit, desc};
+    return n;
 }
 
 } // namespace q_engine
