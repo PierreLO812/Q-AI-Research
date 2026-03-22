@@ -199,6 +199,10 @@ ExprPtr make_anticommutator(ExprPtr a, ExprPtr b) {
     auto n = std::make_shared<ExprNode>(NodeType::ANTICOMMUTATOR); n->left = a; n->right = b; return n;
 }
 ExprPtr make_dagger(ExprPtr a) {
+    auto ta = infer_quantum_type(a);
+    if (ta == QuantumType::SCALAR) {
+        throw std::runtime_error("[AST TYPE ERROR] Cannot apply Hermitian conjugate (dagger) to a SCALAR entity.");
+    }
     auto n = std::make_shared<ExprNode>(NodeType::DAGGER); n->left = a; return n;
 }
 ExprPtr make_partial_trace(ExprPtr rho_ab, int subsystem) {

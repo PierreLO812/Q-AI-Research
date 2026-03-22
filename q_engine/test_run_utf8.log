@@ -1,0 +1,163 @@
+﻿========================================
+        Q-ENGINE C++ (L'Oracle)         
+========================================
+Enter quantum hypothesis: [LLMMutator] Loading Keep-Alive model from llmmodel/consolidated.safetensors ...
+[LLMMutator] Model successfully loaded into Keep-Alive memory.
+
+[1/6] Semantic Parsing (NLP) of Hypothesis...
+ -> No specific macroscopic constraints found, using default quantum baseline.
+[2/6] Running Physics Simulation (Lindblad) with noise level \gamma = 0.01...
+[3/6] Running Physics-Informed Neural Network (Auto-Diff)...
+
+[Phase 9] Building Dimensional Constraint Map (PG-SR)...
+ -> Registered 6 physical dimension tags.
+ -> Lindblad simulation reference generated (11 data points).
+
+[3/6] 'Le Cerveau' (Al-Hilbert + PG-SR) searching for physics law...
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [Al-Hilbert] Best law discovered: (((gamma * sigma_x) + (gamma + t))^2) (fitness=0.516999)
+
+[4/6] Verifying Dimensional Coherence (PG-SR) and SOS certificate...
+
+[4/6] Offloading High-Dimensional Regression to Python (PySINDy Worker)...
+   [PythonBridge] C++ Master spawning PySINDy Python Worker...
+   [PythonBridge] PySINDy Worker Output: '{"status": "success", "worker": "PySINDy", "discovered_equation": "x^2 + x", "confidence": 0.98}
+'
+   [PythonBridge] Terminating Python Subprocess and returning control to C++ Master.
+
+[4.5/6] Z3 SMT Constraint Satisfiability Check...
+   [Z3 SMT Solver] Constructing Logic Constraints from AST...
+   [Z3 SMT Solver] Expressing Bounds: (-inf < x < inf), Probabilities (0 <= P <= 1)
+   [Z3 SMT Solver] SUCCESS. Constraints are Satisfiable Modulo Theories.
+
+[5/6] 'Le Juge' RLVR: Composite Reward (Physics x Lean 4)...
+
+[RLVR] Computing Composite Reward...
+   [RLVR] Physics accuracy score: 0.280973 (RMSE vs Lindblad simulation: 0.719027)
+
+[RLVR] Generating formal proof for decoherence_law...
+[RLVR] Trying tactic: sorry
+[RLVR] Tactic failed. Lean feedback: error: unsolved goals.
+Ôèó (x + x) = (2 * x)
+[RLVR] Trying tactic: rfl
+[RLVR] Tactic failed. Lean feedback: error: unsolved goals.
+Ôèó (x + x) = (2 * x)
+[RLVR] Trying tactic: simp
+[RLVR] Tactic failed. Lean feedback: error: unsolved goals.
+Ôèó (x + x) = (2 * x)
+[RLVR] Trying tactic: ring
+[RLVR] SUCCESS! Lean kernel verified theorem using tactic: ring
+   [RLVR] Final Reward = 0.280973 * 1 = 0.280973
+
+   => [HYPOTHESE AFFIRMEE] : Le signal SURVIT
+   => L'equation (((gamma * sigma_x) + (gamma + t))^2) est valide. Fidelite finale : 99.004983% >= seuil requis de 95.000000%.
+   => Final Equation: (((gamma * sigma_x) + (gamma + t))^2)
+[6/6] Generating Schemas and Bridges...
+
+=============================================
+ >> COMPUTATION COMPLETE.
+ >> Results saved to 'report.md'.
+ >> Hypothesis ACCEPTED.
+=============================================
+
+
+Appuyez sur Entree pour fermer le programme...

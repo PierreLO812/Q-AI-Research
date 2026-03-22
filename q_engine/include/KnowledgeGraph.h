@@ -13,15 +13,19 @@ struct SimulationRecord {
     double loss;
     ErrorCategory error_type;
     int timestamp;
+    std::string mutation_json; // Optionally store the JSON from LLM
 
-    SimulationRecord(const std::string& eq, double l, ErrorCategory et, int t)
-        : equation_hash(eq), loss(l), error_type(et), timestamp(t) {}
+    SimulationRecord(const std::string& eq, double l, ErrorCategory et, int t, const std::string& json = "")
+        : equation_hash(eq), loss(l), error_type(et), timestamp(t), mutation_json(json) {}
 };
 
 class KnowledgeGraph {
 public:
     // Store every single attempt
     void record_attempt(ExprPtr expr, double loss, ErrorCategory et);
+
+    // Store LLM mutations
+    void record_mutation_attempt(ExprPtr rejected_expr, const std::string& lean_log, const std::string& mutation_json);
 
     // Give me the history of an equation (exact match or structural)
     bool has_failed_before(ExprPtr expr) const;

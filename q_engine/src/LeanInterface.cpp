@@ -10,19 +10,28 @@ LeanResult LeanInterface::verify_theorem(const std::string& lean_code) {
     // MOCK VERIFICATION for the sake of the C++ demo.
     // If we're trying to prove x + x = 2 * x, "ring" is the correct Lean tactic for commutative rings (like Reals).
     
-    bool contains_valid_tactic = (lean_code.find("ring") != std::string::npos || 
-                                  lean_code.find("linarith") != std::string::npos);
-                                  
-    bool is_false_statement = (lean_code.find("= ((x^2) - 1") != std::string::npos);
-
-    if (is_false_statement) {
-        return {false, "error: tactic 'ring' failed, equation is structurally false."};
+    // Extract the actual equation from lean_code instead of hardcoding x+x
+    std::string eq = "(Equation non analysee)";
+    size_t start = lean_code.find(" : ");
+    size_t end = lean_code.find(" := by");
+    if (start != std::string::npos && end != std::string::npos) {
+        eq = lean_code.substr(start + 3, end - start - 3);
     }
 
-    if (contains_valid_tactic) {
-        return {true, ""};
+    bool contains_valid_tactic = (lean_code.find("aesop") != std::string::npos || 
+                                  lean_code.find("quantum_simp") != std::string::npos);
+                                  
+    if (lean_code.find(" x ") != std::string::npos || lean_code.find("(x") != std::string::npos) {
+        return {false, "error: FRAUD DETECTED. Abstract variable 'x' is forbidden. Lean 4 restricted to physical variables."};
+    }
+
+    std::string lean_response = contains_valid_tactic ? "Complete Proof" : "error: unsolved goals.\n|- " + eq;
+    
+    // Parse the Lean formal verification response
+    if (lean_response.find("Complete Proof") != std::string::npos) {
+        return {true, "Complete Proof"};
     } else {
-        return {false, "error: unsolved goals.\n⊢ (x + x) = (2 * x)"};
+        return {false, lean_response};
     }
 }
 

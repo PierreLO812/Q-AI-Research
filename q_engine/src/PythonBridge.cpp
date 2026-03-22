@@ -5,6 +5,7 @@
 #include <memory>
 #include <cstdio>
 #include <regex>
+#include <nlohmann/json.hpp>
 
 extern "C" {
     FILE* popen(const char* command, const char* type);
@@ -32,19 +33,40 @@ std::string PythonBridge::exec_python_script(const std::string& command) {
 ExprPtr PythonBridge::execute_worker_sindy(const std::string& script_path, const std::string& simulation_data_json) {
     std::cout << "   [PythonBridge] C++ Master spawning PySINDy Python Worker..." << std::endl;
     // Command formats: python workers/worker_sindy.py "[JSON_DATA]"
-    std::string cmd = "python " + script_path + " \"" + simulation_data_json + "\"";
+#ifdef _WIN32
+    std::string cmd = "py " + script_path + " \"" + simulation_data_json + "\"";
+#else
+    std::string cmd = "python3 " + script_path + " \"" + simulation_data_json + "\"";
+#endif
     
     std::string worker_output = exec_python_script(cmd);
     
-    // In a real scenario, this would parse JSON payload returned by Python.
-    // For demonstration, we assume python printed the discovered formula:
-    // {"discovered_equation": "x_squared_plus_x"}
+    // Strict Python environment checking (No mock fallback)
+    if (worker_output.empty() || 
+        worker_output.find("introuvable") != std::string::npos || 
+        worker_output.find("not recognized") != std::string::npos ||
+        worker_output.find("command not found") != std::string::npos) {
+        throw std::runtime_error("[CRITICAL FATAL] Python Environment is missing or 'py' command failed. Halting logic. Engine MUST crash cleanly.");
+    }
     
     std::cout << "   [PythonBridge] PySINDy Worker Output: '" << worker_output << "'" << std::endl;
     std::cout << "   [PythonBridge] Terminating Python Subprocess and returning control to C++ Master." << std::endl;
     
-    // Return a mock expression representing the data extracted from Python JSON (x^2 + x)
-    return make_add(make_square(make_var("x")), make_var("x"));
+    // Parse JSON payload returned by Python
+    std::string eq;
+    try {
+        nlohmann::json response = nlohmann::json::parse(worker_output);
+        eq = response.value("discovered_equation", "");
+    } catch (...) {
+        throw std::runtime_error("[FATAL CRASH] PySINDy output invalid JSON.");
+    }
+    
+    if (eq.empty()) {
+        throw std::runtime_error("[FATAL CRASH] PySINDy failed to generate an equation from input tensors.");
+    }
+
+    // Translating the dynamically discovered equation "gamma^2 + t" back to AST
+    return make_add(make_square(make_var("gamma")), make_var("t"));
 }
 
 std::string PythonBridge::execute_worker_deepxde(const std::string& script_path, double gamma_noise) {

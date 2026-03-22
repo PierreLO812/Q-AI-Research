@@ -62,13 +62,24 @@ ExprPtr AlHilbertCore::random_expr(int depth) {
         return make_lindblad_dissipator(L, rho, gamma_rate);
     }
     // Dagger / hermitian conjugate
-    return make_dagger(random_expr(depth - 1));
+    try {
+        return make_dagger(random_expr(depth - 1));
+    } catch (const std::exception& e) {
+        // Enforce semantic fallback if Dagger was attempted on a scalar
+        std::cerr << "   " << e.what() << "\n";
+        return make_pauli(PauliAxis::Z); 
+    }
 }
 
 std::vector<ExprPtr> AlHilbertCore::generate_population(int size, int max_depth) {
     std::vector<ExprPtr> pop;
-    for (int i = 0; i < size; ++i) {
-        pop.push_back(random_expr(max_depth));
+    for (int i = 0; i < size; ) {
+        try {
+            pop.push_back(random_expr(max_depth));
+            ++i; // Only advance if AST was valid
+        } catch (...) {
+            // AST Type error (like Dagger on Scalar) aborted this tree, retry transparently.
+        }
     }
     // PG-SR: Inject known quantum physics templates as strong priors
     // e^(-gamma * t) — exponential decay — most fundamental law of decoherence

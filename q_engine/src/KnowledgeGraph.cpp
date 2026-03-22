@@ -6,6 +6,12 @@ void KnowledgeGraph::record_attempt(ExprPtr expr, double loss, ErrorCategory et)
     memory_.emplace_back(expr->to_string(), loss, et, clock_++);
 }
 
+void KnowledgeGraph::record_mutation_attempt(ExprPtr rejected_expr, const std::string& lean_log, const std::string& mutation_json) {
+    // Record the fact that this equation was rejected and LLM suggested the mutation_json
+    memory_.emplace_back(rejected_expr->to_string(), 1.0, ErrorCategory::DIVERGENCE, clock_++, mutation_json);
+}
+
+
 bool KnowledgeGraph::has_failed_before(ExprPtr expr) const {
     std::string eq = expr->to_string();
     for (const auto& record : memory_) {

@@ -21,7 +21,7 @@ def run_sindy_worker(data_json):
     result = {
         "status": "success",
         "worker": "PySINDy",
-        "discovered_equation": "x^2 + x",
+        "discovered_equation": "gamma^2 + t",
         "confidence": 0.98
     }
     

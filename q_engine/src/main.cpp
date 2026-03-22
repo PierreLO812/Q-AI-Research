@@ -17,6 +17,7 @@
 #include "Z3Validator.h"
 #include "PythonBridge.h"
 #include "DimensionalAnalysis.h"
+#include "LLMMutator.h"
 
 #include <iostream>
 #include <fstream>
@@ -86,6 +87,9 @@ int main(int argc, char** argv) {
     std::cout << "Enter quantum hypothesis: ";
     std::getline(std::cin, hypothesis);
     
+    // --- Keep-Alive LLM Initialization ---
+    LLMMutator::get_instance().init_keep_alive("llmmodel");
+    
     if (hypothesis.empty()) {
         hypothesis = "Test Default Hypothesis: Find Quantum Drift Law";
     }
@@ -150,75 +154,92 @@ int main(int argc, char** argv) {
 
     std::cout << "\n[5/6] 'Le Juge' RLVR: Composite Reward (Physics x Lean 4)..." << std::endl;
     RLVRAgent agent;
+    KnowledgeGraph temporal_kg;
     ExprPtr lean_target = make_exp(make_mul(make_const(-1.0), make_mul(make_var("gamma"), make_var("t"))));
-    double composite_reward = agent.compute_reward(
-        discovered_law, lean_target, "decoherence_law",
-        reference_fidelity, variable_sets);
-
-    // ═══ Fix 2: RLVR Correct Semantics ════════════════════════════════════════
-    // The RLVR must distinguish between:
-    //   - Equation CORRECT but signal DIED (F_final < 95%) -> [INFIRMEE]
-    //   - Equation CORRECT and signal SURVIVED (F_final >= 95%) -> [AFFIRMEE]
-    //   - Equation INVALID (bad math) -> [REJECTED]
-    //
-    // Critical: "J'ai trouve l'equation de la mort du signal" !=
-    //           "Le signal a survécu"
-    const double SURVIVAL_THRESHOLD = 0.95; // 95% fidelity minimum for signal survival
+    
+    int llm_loop = 0;
+    const int MAX_MUTATIONS = 5;
+    
+    double composite_reward = 0.0;
     double final_fidelity = reference_fidelity.empty() ? 0.0 : reference_fidelity.back();
-    bool equation_is_mathematically_valid = (composite_reward > 0.01);
-    bool signal_survived = (final_fidelity >= SURVIVAL_THRESHOLD);
+    const double SURVIVAL_THRESHOLD = 0.95; // 95% fidelity minimum for signal survival
+    bool equation_is_mathematically_valid = false;
+    bool signal_survived = false;
 
-    // Three distinct verdict outputs (not just true/false)
     std::string verdict_str;
     std::string verdict_physical;
-    bool is_formally_proved;
-    double confidence;
+    bool is_formally_proved = false;
+    double confidence = 0.0;
+    std::string lean_err = "";
 
-    if (!equation_is_mathematically_valid) {
-        verdict_str      = "[EQUATION INVALIDE]";
-        verdict_physical = "Aucune equation physiquement coherente trouvee pour cette hypothese.";
-        is_formally_proved = false;
-        confidence = 0.0;
-    } else if (!signal_survived) {
-        // The equation correctly describes the death of the signal
-        verdict_str      = "[HYPOTHESE INFIRMEE] : Le signal NE SURVIT PAS";
-        verdict_physical = "L'equation " + discovered_law->to_string() +
-                           " est mathematiquement correcte et decrit la MORT du signal." +
-                           " Fidelite finale : " + std::to_string(final_fidelity * 100.0) +
-                           "% < seuil requis de " + std::to_string(SURVIVAL_THRESHOLD * 100.0) + "%.";
-        is_formally_proved = false;
-        confidence = final_fidelity * 100.0;
-    } else {
-        // Both equation is correct AND signal survives
-        verdict_str      = "[HYPOTHESE AFFIRMEE] : Le signal SURVIT";
-        verdict_physical = "L'equation " + discovered_law->to_string() +
-                           " est valide. Fidelite finale : " +
-                           std::to_string(final_fidelity * 100.0) +
-                           "% >= seuil requis de " + std::to_string(SURVIVAL_THRESHOLD * 100.0) + "%.";
-        is_formally_proved = true;
-        confidence = final_fidelity * 100.0;
+    std::vector<std::string> proof_steps;
+
+    while (llm_loop < MAX_MUTATIONS) {
+        composite_reward = agent.compute_reward(
+            discovered_law, lean_target, "decoherence_law",
+            reference_fidelity, variable_sets);
+
+        // ═══ Fix 2: RLVR Correct Semantics ════════════════════════════════════════
+        equation_is_mathematically_valid = (composite_reward > 0.01);
+        signal_survived = (final_fidelity >= SURVIVAL_THRESHOLD);
+
+        if (!equation_is_mathematically_valid || !signal_survived) {
+            std::cout << "\n   => [EQUATION REJECTED] Mathematical Valid: " << equation_is_mathematically_valid 
+                      << ", Signal Survived: " << signal_survived << std::endl;
+            
+            lean_err = "Type mismatch or fidelity failure on AST.";
+            std::cout << "\n[Moteur d'Inférence] Invoking Keep-Alive LLM for AST Mutation (Attempt " 
+                      << llm_loop + 1 << " / " << MAX_MUTATIONS << ")..." << std::endl;
+
+            // Execute C++ -> LLM -> C++ JSON Mutation
+            ExprPtr new_law = LLMMutator::get_instance().mutate_ast(discovered_law, lean_err);
+            
+            // Record the failure to Temporal Knowledge Graph
+            temporal_kg.record_mutation_attempt(discovered_law, lean_err, "{\"action\":\"replace\"}"); // simulated json store
+            
+            discovered_law = new_law;
+            llm_loop++;
+            
+            if (llm_loop >= MAX_MUTATIONS) {
+                // Formatting failure report and breaking out
+                verdict_str      = "[HYPOTHESE INFIRMEE] : Loop exhausted limit.";
+                verdict_physical = "Aucune equation physiquement coherente trouvee apres mutations LLM.";
+                is_formally_proved = false;
+                confidence = 0.0;
+                break;
+            }
+        } else {
+            // Success
+            verdict_str      = "[HYPOTHESE AFFIRMEE] : Le signal SURVIT";
+            verdict_physical = "L'equation " + discovered_law->to_string() +
+                               " est valide. Fidelite finale : " +
+                               std::to_string(final_fidelity * 100.0) +
+                               "% >= seuil requis de " + std::to_string(SURVIVAL_THRESHOLD * 100.0) + "%.";
+            is_formally_proved = true;
+            confidence = final_fidelity * 100.0;
+            break;
+        }
     }
 
     std::cout << "\n   => " << verdict_str << std::endl;
     std::cout << "   => " << verdict_physical << std::endl;
-    std::cout << "   => Equation discovered: " << discovered_law->to_string() << std::endl;
-    std::cout << "   => Fidelite finale du signal: " << final_fidelity * 100.0 << "%" << std::endl;
-
+    std::cout << "   => Final Equation: " << discovered_law->to_string() << std::endl;
+    
     // Mocking the RLVR proof steps for the report
-    std::vector<std::string> proof_steps = {
+    proof_steps = {
         "[Phase 9] Typage AST: toute equation melangeant scalaire et rho a ete rejetee (DensityOp type enforcement).",
         "[Phase 9] Analyse dimensionnelle (PG-SR) : " + std::to_string(dim_map.size()) + " variables etiquetees avec unites physiques.",
         "[Phase 9] Al-Hilbert amorce avec priors physiques : e^(-gamma*t), tanh(gamma*t), D[sigma_z](rho).",
-        "[Phase 9] Equation decouverte : " + discovered_law->to_string(),
+        "[Phase 9] Equation decouverte post-mutation : " + discovered_law->to_string(),
         "[Fix 2] Fidelite finale du signal quantique = " + std::to_string(final_fidelity * 100.0) + "%",
-        "[Fix 2] Verdict de survie (seuil 95%) : " + verdict_str,
+        "[Fix 2] Verdict : " + verdict_str,
         "[Le Juge] RLVR Composite Reward = " + std::to_string(composite_reward)
     };
 
     std::cout << "[6/6] Generating Schemas and Bridges..." << std::endl;
     std::string svg_bloch = SchemaGenerator::generate_bloch_sphere_svg(0.8, 0.2); // 0.8 probability of |0>
     
-    std::string lean_err = (!is_formally_proved) ? "Lean 4: Unsolved goals or failed tactic." : "";
+    lean_err = (!is_formally_proved) ? "Lean 4: Unsolved goals or failed tactic." : "";
     std::string mcp_json = MCPBridge::process_hypothesis_to_json(
         hypothesis, is_formally_proved, confidence,
         discovered_law->to_string(), lean_err);

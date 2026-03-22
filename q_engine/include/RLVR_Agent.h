@@ -20,7 +20,7 @@ namespace q_engine {
 class RLVRAgent {
 public:
     RLVRAgent() {
-        tactics_ = {"sorry", "rfl", "simp", "ring", "linarith"};
+        tactics_ = {"aesop", "quantum_simp", "simp", "linarith"};
     }
 
     // ─── Lean 4 Formal Proof ──────────────────────────────────

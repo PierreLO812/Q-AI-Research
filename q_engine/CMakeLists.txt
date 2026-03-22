@@ -15,9 +15,21 @@ FetchContent_MakeAvailable(eigen)
 # --- Z3 Native (Phase 8 Master Mode) ---
 # We mock Z3 bindings, no Pybind11 anymore as C++ is the absolute master orchestrator
 
-add_library(q_engine src/QuantumCore.cpp src/AutoDiff.cpp src/Symbolic.cpp src/AlHilbert.cpp src/Positivstellensatz.cpp src/ErrorClassifier.cpp src/KnowledgeGraph.cpp src/ActiveInference.cpp src/LeanTranslator.cpp src/LeanInterface.cpp src/RLVR_Agent.cpp src/SchemaGenerator.cpp src/MCPBridge.cpp src/NLParser.cpp src/ConstraintBuilder.cpp src/Z3Validator.cpp src/PythonBridge.cpp src/DimensionalAnalysis.cpp)
+# --- nlohmann/json for LLM prompt mutation JSON output parsing ---
+FetchContent_Declare(json
+  GIT_REPOSITORY https://github.com/nlohmann/json.git
+  GIT_TAG v3.11.3)
+FetchContent_MakeAvailable(json)
+
+# --- llama.cpp for Keep-Alive LLM inference ---
+# Configure hardware acceleration (CUBLAS, METAL, AVX) - auto detection mostly handles this on Windows/Linux.
+# set(LLAMA_CUBLAS OFF CACHE BOOL "Enable CUDA acceleration for llama.cpp")
+# set(LLAMA_WERROR OFF CACHE BOOL "Disable warnings as errors")
+# add_subdirectory(llama.cpp)
+
+add_library(q_engine src/QuantumCore.cpp src/AutoDiff.cpp src/Symbolic.cpp src/AlHilbert.cpp src/Positivstellensatz.cpp src/ErrorClassifier.cpp src/KnowledgeGraph.cpp src/ActiveInference.cpp src/LeanTranslator.cpp src/LeanInterface.cpp src/RLVR_Agent.cpp src/SchemaGenerator.cpp src/MCPBridge.cpp src/NLParser.cpp src/ConstraintBuilder.cpp src/Z3Validator.cpp src/PythonBridge.cpp src/DimensionalAnalysis.cpp src/LLMMutator.cpp)
 target_include_directories(q_engine PUBLIC include)
-target_link_libraries(q_engine PUBLIC Eigen3::Eigen)
+target_link_libraries(q_engine PUBLIC Eigen3::Eigen nlohmann_json::nlohmann_json)
 
 enable_testing()
 add_executable(test_quantum tests/test_quantum.cpp)
