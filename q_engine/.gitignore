@@ -1,0 +1,9 @@
+llmmodel/
+build/
+*.exe
+*.dll
+*.a
+*.o
+*.obj
+*.log
+*.txt
