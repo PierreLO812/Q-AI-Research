@@ -1,62 +1,74 @@
-# Q-AI-Research (Q-Engine)
+# 🌌 Q-AI-Research: The Engine of Quantum Discovery
 
-**Q-AI-Research** is an advanced AI-driven Quantum Physics engine written in high-performance C++. It is designed to autonomously discover, simulate, and mathematically verify new laws of quantum physics and wave mechanics. A user inputs an hypothesis, and the engine evaluates it through simulation, symbolic regression, and formal mathematical proof.
+**Q-AI-Research** is a state-of-the-art, high-performance C++ discovery engine designed to autonomously bridge the gap between quantum simulation and formal mathematical proofs. By combining **Lindblad Physics**, **Symbolic Regression (SINDy)**, and **Formal Verification (Lean 4)**, it doesn't just simulate quantum systems—it *derives their fundamental laws*.
 
-## 🧠 Architecture Overview (The 6 Stages of Cognition)
+---
 
-The system is built upon 6 powerful cognitive modules:
+## 🏛️ Architecture: The 6 Pillars of L'Oracle
 
-1. **Noyau Quantique (Simulation Core)**
-   - High-performance C++ engine leveraging `Eigen` (BLAS/LAPACK) for dense matrix operations.
-   - Solves the Lindblad Master Equation via RK4 to simulate quantum probability dissipation over time.
-   - Applies Kraus operator maps to model environmental noise (NISQ).
+The engine operates on a native, zero-mock pipeline:
 
-2. **La Moelle Épinière (Physics-Informed Neural Networks - PINNs)**
-   - Custom-built exact Reverse-Mode Automatic Differentiation (AD) engine.
-   - Neural Networks natively embed the Schrödinger equation into their loss function, penalizing physics-violating predictions.
+### 1. 📡 Semantic Perception (NLP)
+Parses human-language hypotheses (e.g., *"How does noise affect drift?"*) into structured physical entities and constraints.
 
-3. **Le Cerveau (Symbolic Regression & Discovery)**
-   - **Al-Hilbert Algorithm**: Heuristically retro-engineers physical rules and mathematical relations by searching an Abstract Syntax Tree (AST) space.
-   - **Positivstellensatz (SOS) Validator**: Acts as an infallible mathematical censor, automatically rejecting proposed laws that violate basic probability axioms (e.g., negative probabilities).
+### 2. 🧪 Quantum Simulation Core
+Solves the **Lindblad Master Equation** via high-performance C++ (Eigen) to generate ground-truth fidelity trajectories under NISQ environmental noise.
 
-4. **La Mémoire (Temporal Knowledge Graph & Active Inference)**
-   - Records all tested hypotheses and their failure modes (NISQ Noise, Divergence, SOS Violation).
-   - Solves the Free Energy minimization problem to aggressively push the AI to explore highly uncertain, novel mathematical angles instead of repeating past failures.
+### 3. 🧠 Le Cerveau (Symbolic Regression)
+- **Al-Hilbert**: Explores Abstract Syntax Tree (AST) spaces to find candidate equations.
+- **PySINDy Integration**: Offloads high-dimensional regression to native Python workers using Numpy Polyfit for precise coefficient discovery.
 
-5. **Le Juge (Formal Proof via Lean 4)**
-   - The absolute standard of verification. Translated ASTs are pushed to a `Lean 4` Theorem Prover.
-   - **RLVR (Reinforcement Learning from Verifier Feedback) Agent**: Learns to apply Lean tactics (`simp`, `ring`, `linarith`) to prove discoveries correct. If Lean fails to compile the proof, the hypothesis is scientifically rejected.
+### 4. ⚖️ PG-SR & Z3 Validation
+- **Dimensional Analysis (PG-SR)**: Rejects any equation that violates SI unit coherence.
+- **Z3 SMT Solver**: Formally verifies that discovering parameters satisfy physical bounds and transcendental constraints.
 
-6. **L'Oracle (Execution & Interaction)**
-   - The global executable integrating all phases.
-   - Features a custom **Model Context Protocol (MCP)** bridge, returning findings in JSON format for consumption by standard language models.
-   - Generates raw `<svg>` schemas (like Bloch Spheres) and exhaustive mathematical reports (`report.md`).
+### 5. ⚖️ Le Juge (Native Lean 4 Verification)
+- **RLVR (Reinforcement Learning from Verifier feedback)**: Automatically translates ASTs into Lean 4 theorems.
+- **Tactic Loop**: Invokes a native Lean 4 kernel to prove the discovered law matches the sim-data. It captures real compiler errors to guide mutations.
 
-## 🚀 Building and Running
+### 6. 🦾 LLM-in-the-Loop Mutator
+When a proof fails, a **local Keep-Alive LLM** (Safetensors) analyzes the exact Lean 4 error and the current AST to suggest surgical mutations, breaking the discovery bottleneck.
 
-This project uses CMake and requires a C++14 compatible compiler (e.g., `g++` or MSVC). Note: The engine automates downloading its dependency `Eigen 3.4.0`.
+---
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/PierreLO812/Q-AI-Research.git
-cd Q-AI-Research/q_engine
+## ⚡ Quick Start
 
-# 2. Build the project
-cmake -S . -B build
+### Prerequisites
+- **C++17 Compiler** (MSVC 2022 / GCC 11+)
+- **CMake 3.20+**
+- **Python 3.10+** (with `numpy`)
+- **Lean 4** (via `elan`)
+
+### Building
+```powershell
+# Navigate to engine
+cd q_engine
+
+# Configure & Build
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 
-# 3. Running L'Oracle
-# You can execute the pipeline manually or directly feed it a hypothesis:
-echo "Does quantum drift follow an exponential curve?" | ./start.exe
+# Copy binaries
+copy build\start.exe .
 ```
 
-*Upon execution, the engine will run the 6 phases and generate a detailed `report.md` alongside an SVG visualization and JSON metadata.*
+### Running
+```powershell
+.\start.exe
+```
+*Enter your hypothesis and watch the engine iterate through 5 mutation loops to converge on a physical law.*
 
-## 🧪 Testing the Modules
+---
 
-Dedicated test executives are available for each cognitive lobe of the Engine:
-- `test_quantum.exe`: Validates the Lindblad solver and trace-preservation.
-- `test_pinn.exe`: Validates the AutoDiff engine and physics-loss optimization.
-- `test_cerveau.exe`: Validates AST generation, regression, and SOS rejection.
-- `test_memoire.exe`: Validates curiosity bonuses and failure classification.
-- `test_lean_juge.exe`: Validates parsing ASTs to Lean 4, compiling proofs, and catching false assertions.
+## 📜 Documentation
+- [USERGUIDE.md](USERGUIDE.md): Deep dive into logs, error codes, and workflow internals.
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md): Technical whitepaper on RLVR and SOS Certificates.
+
+---
+
+## 🛸 Visual Output
+The engine generates a real-time `report.md` with:
+- **Verified Physics Laws**
+- **Bloch Sphere `<svg>` Visualizations**
+- **Lean 4 Proof Steps**
+- **Curiosity impasses from the Temporal Knowledge Graph**
