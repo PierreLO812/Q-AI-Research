@@ -43,8 +43,11 @@ public:
                           const std::vector<double>& reference_data,
                           const std::vector<std::map<std::string, double>>& variable_sets);
 
+    std::string get_last_lean_error() const { return last_lean_error_; }
+
 private:
     std::vector<std::string> tactics_;
+    std::string last_lean_error_;
 
     // Root Mean Square Error between equation predictions and reference
     double rmse(const std::vector<double>& predictions,

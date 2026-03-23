@@ -1,0 +1,375 @@
+﻿========================================
+        Q-ENGINE C++ (L'Oracle)         
+========================================
+Enter quantum hypothesis: [LLMMutator] Loading Keep-Alive model from llmmodel/consolidated.safetensors ...
+[LLMMutator] Model successfully loaded into Keep-Alive memory.
+
+[1/6] Semantic Parsing (NLP) of Hypothesis...
+ -> Extracted 1 physical entities.
+[2/6] Running Physics Simulation (Lindblad) with noise level \gamma = 0.01...
+[3/6] Running Physics-Informed Neural Network (Auto-Diff)...
+
+[Phase 9] Building Dimensional Constraint Map (PG-SR)...
+ -> Registered 7 physical dimension tags.
+ -> Lindblad simulation reference generated (11 data points).
+
+[3/6] 'Le Cerveau' (Al-Hilbert + PG-SR) searching for physics law...
+.\start.exe :    [AST 
+TYPE ERROR] Cannot 
+apply Hermitian 
+conjugate (dagger) to 
+a SCALAR entity.
+Au caractère Ligne:1 
+: 107
++ ...  ; echo "Final 
+Demo 2" | .\start.exe 
+> phase5_strict.log 
+2>&1 ; Get-C ...
++                     
+         ~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (   [AST TY   
+ PE ER... SCALAR e    
+ntity.:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [AST TYPE ERROR] 
+Cannot apply 
+Hermitian conjugate 
+(dagger) to a SCALAR 
+entity.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Cannot add/sub [s] and [INCOHERENT]
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [PG-SR DIM] REJECT: Transcendental argument must be dimensionless.
+   [Al-Hilbert] Best law discovered: (((gamma * sigma_x) + (gamma + t))^2) (fitness=0.516999)
+
+[4/6] Verifying Dimensional Coherence (PG-SR) and SOS certificate...
+
+[4/6] Offloading High-Dimensional Regression to Python (PySINDy Worker)...
+   [PythonBridge] C++ Master spawning PySINDy Python Worker...
+   [PythonBridge] PySINDy Worker Output: '{"status": "success", "worker": "PySINDy(Live Regression)", "discovered_equation": "gamma * sigma_x + t", "confidence": 0.98}
+'
+   [PythonBridge] Terminating Python Subprocess and returning control to C++ Master.
+
+[4.5/6] Z3 SMT Constraint Satisfiability Check...
+   [Z3 SMT Solver] Constructing Logic Constraints from AST...
+   [Z3 SMT Solver] Expressing Bounds: (-inf < x < inf), Probabilities (0 <= P <= 1)
+   [Z3 SMT Solver] SUCCESS. Constraints are Satisfiable Modulo Theories.
+
+[5/6] 'Le Juge' RLVR: Composite Reward (Physics x Lean 4)...
+
+[RLVR] Computing Composite Reward...
+   [RLVR] Physics accuracy score: 0.280973 (RMSE vs Lindblad simulation: 0.719027)
+
+[RLVR] Generating formal proof for decoherence_law...
+[RLVR] Generated Lean 4 Code:
+import Mathlib
+
+theorem decoherence_law (gamma t : Real) (rho : Matrix) : ((((gamma * sigma_x) + (gamma + t))) ^ 2) = exp((-1 * (gamma * t))) := by
+  aesop
+
+[RLVR] Trying tactic: aesop
+[RLVR] Tactic failed. Lean feedback: 'lean' n'est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+[RLVR] Generated Lean 4 Code:
+import Mathlib
+
+theorem decoherence_law (gamma t : Real) (rho : Matrix) : ((((gamma * sigma_x) + (gamma + t))) ^ 2) = exp((-1 * (gamma * t))) := by
+  quantum_simp
+
+[RLVR] Trying tactic: quantum_simp
+[RLVR] Tactic failed. Lean feedback: 'lean' n'est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+[RLVR] Generated Lean 4 Code:
+import Mathlib
+
+theorem decoherence_law (gamma t : Real) (rho : Matrix) : ((((gamma * sigma_x) + (gamma + t))) ^ 2) = exp((-1 * (gamma * t))) := by
+  simp
+
+[RLVR] Trying tactic: simp
+[RLVR] Tactic failed. Lean feedback: 'lean' n'est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+[RLVR] Generated Lean 4 Code:
+import Mathlib
+
+theorem decoherence_law (gamma t : Real) (rho : Matrix) : ((((gamma * sigma_x) + (gamma + t))) ^ 2) = exp((-1 * (gamma * t))) := by
+  linarith
+
+[RLVR] Trying tactic: linarith
+[RLVR] Tactic failed. Lean feedback: 'lean' n'est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+[RLVR] Exhausted 
+tactics. Proof failed.
+   [RLVR] Final Reward = 0.280973 * 0 = 0
+
+   => [EQUATION REJECTED] Mathematical Valid: 0, Signal Survived: 1
+
+[Moteur d'Inf├®rence] Invoking Keep-Alive LLM for AST Mutation (Attempt 1 / 5)...
+
+[LLMMutator] =======================================
+[LLMMutator] Prompt envoy├® au LLM local :
+Voici l'erreur Lean 4 : [Type mismatch or fidelity failure on AST.]. Voici ce qu'on a d├®j├á essay├® : [ ]. Voici l'├®quation actuelle de l'AST : [(((gamma * sigma_x) + (gamma + t))^2)]. Propose une nouvelle mutation en JSON.
+[LLMMutator] =======================================
+
+[LLMMutator] LLM Inference running on prompt (length: 565) ...
+ -> LLM Suggested JSON: {"action":"replace","new_operator":"sigma_y","target_node":"sigma_x"}
+ -> Executing AST mutation: Replacing 'sigma_x' with 'sigma_y'
+
+[RLVR] Computing Composite Reward...
+   [RLVR] Physics accuracy score: 0.00497757 (RMSE vs Lindblad simulation: 0.995022)
+   [RLVR] Physics accuracy too low (0.00497757). Skipping Lean 4 call. Reward = 0.
+
+   => [EQUATION REJECTED] Mathematical Valid: 0, Signal Survived: 1
+
+[Moteur d'Inf├®rence] Invoking Keep-Alive LLM for AST Mutation (Attempt 2 / 5)...
+
+[LLMMutator] =======================================
+[LLMMutator] Prompt envoy├® au LLM local :
+Voici l'erreur Lean 4 : [Type mismatch or fidelity failure on AST.]. Voici ce qu'on a d├®j├á essay├® : [ "(((gamma * sigma_x) + (gamma + t))^2)" ]. Voici l'├®quation actuelle de l'AST : [D_gamma=0.010000[sigma_y](rho)]. Propose une nouvelle mutation en JSON.
+[LLMMutator] =======================================
+
+[LLMMutator] LLM Inference running on prompt (length: 598) ...
+ -> LLM Suggested JSON: {"action":"replace","new_operator":"gamma","target_node":"sigma_x"}
+ -> Executing AST mutation: Replacing 'sigma_x' with 'gamma'
+
+[RLVR] Computing Composite Reward...
+   [RLVR] Physics accuracy score: 0.00497757 (RMSE vs Lindblad simulation: 0.995022)
+   [RLVR] Physics accuracy too low (0.00497757). Skipping Lean 4 call. Reward = 0.
+
+   => [EQUATION REJECTED] Mathematical Valid: 0, Signal Survived: 1
+
+[Moteur d'Inf├®rence] Invoking Keep-Alive LLM for AST Mutation (Attempt 3 / 5)...
+
+[LLMMutator] =======================================
+[LLMMutator] Prompt envoy├® au LLM local :
+Voici l'erreur Lean 4 : [Type mismatch or fidelity failure on AST.]. Voici ce qu'on a d├®j├á essay├® : [ "(((gamma * sigma_x) + (gamma + t))^2)", "D_gamma=0.010000[sigma_y](rho)" ]. Voici l'├®quation actuelle de l'AST : [(gamma * sigma_z)]. Propose une nouvelle mutation en JSON.
+[LLMMutator] =======================================
+
+[LLMMutator] LLM Inference running on prompt (length: 619) ...
+ -> LLM Suggested JSON: {"action":"replace","new_operator":"t","target_node":"sigma_x"}
+ -> Executing AST mutation: Replacing 'sigma_x' with 't'
+
+[RLVR] Computing Composite Reward...
+   [RLVR] Physics accuracy score: 0.00497757 (RMSE vs Lindblad simulation: 0.995022)
+   [RLVR] Physics accuracy too low (0.00497757). Skipping Lean 4 call. Reward = 0.
+
+   => [EQUATION REJECTED] Mathematical Valid: 0, Signal Survived: 1
+
+[Moteur d'Inf├®rence] Invoking Keep-Alive LLM for AST Mutation (Attempt 4 / 5)...
+
+[LLMMutator] =======================================
+[LLMMutator] Prompt envoy├® au LLM local :
+Voici l'erreur Lean 4 : [Type mismatch or fidelity failure on AST.]. Voici ce qu'on a d├®j├á essay├® : [ "(((gamma * sigma_x) + (gamma + t))^2)", "D_gamma=0.010000[sigma_y](rho)", "(gamma * sigma_z)" ]. Voici l'├®quation actuelle de l'AST : [(t * sigma_x)]. Propose une nouvelle mutation en JSON.
+[LLMMutator] =======================================
+
+[LLMMutator] LLM Inference running on prompt (length: 636) ...
+ -> LLM Suggested JSON: {"action":"replace","new_operator":"t","target_node":"sigma_x"}
+ -> Executing AST mutation: Replacing 'sigma_x' with 't'
+
+[RLVR] Computing Composite Reward...
+   [RLVR] Physics accuracy score: 0.00497757 (RMSE vs Lindblad simulation: 0.995022)
+   [RLVR] Physics accuracy too low (0.00497757). Skipping Lean 4 call. Reward = 0.
+
+   => [EQUATION REJECTED] Mathematical Valid: 0, Signal Survived: 1
+
+[Moteur d'Inf├®rence] Invoking Keep-Alive LLM for AST Mutation (Attempt 5 / 5)...
+
+[LLMMutator] =======================================
+[LLMMutator] Prompt envoy├® au LLM local :
+Voici l'erreur Lean 4 : [Type mismatch or fidelity failure on AST.]. Voici ce qu'on a d├®j├á essay├® : [ "(((gamma * sigma_x) + (gamma + t))^2)", "D_gamma=0.010000[sigma_y](rho)", "(gamma * sigma_z)", "(t * sigma_x)" ]. Voici l'├®quation actuelle de l'AST : [(t * sigma_x)]. Propose une nouvelle mutation en JSON.
+[LLMMutator] =======================================
+
+[LLMMutator] LLM Inference running on prompt (length: 653) ...
+ -> LLM Suggested JSON: {"action":"replace","new_operator":"t","target_node":"sigma_x"}
+ -> Executing AST mutation: Replacing 'sigma_x' with 't'
+
+   => [HYPOTHESE INFIRMEE] : Loop exhausted limit.
+   => Aucune equation physiquement coherente trouvee apres mutations LLM.
+   => Final Equation: (t * sigma_x)
+[6/6] Generating Schemas and Bridges...
+
+=============================================
+ >> COMPUTATION COMPLETE.
+ >> Results saved to 'report.md'.
+ >> Hypothesis REJECTED.
+=============================================
+
+
+Appuyez sur Entree pour fermer le programme...

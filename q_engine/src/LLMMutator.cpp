@@ -64,11 +64,16 @@ std::string LLMMutator::generate_text(const std::string& formatted_prompt) {
     std::cout << "[LLMMutator] LLM Inference running on prompt (length: " << formatted_prompt.size() << ") ..." << std::endl;
     
     // Simulate LLM returning a correct JSON
-    // We extract the failed target arbitrarily or by analyzing prompt
+    // Breaking the infinite loop by forcing dynamic targets based on history size!
+    std::string new_op = "sigma_z";
+    if (mutation_history_.size() == 1) new_op = "sigma_y";
+    else if (mutation_history_.size() == 2) new_op = "gamma";
+    else if (mutation_history_.size() >= 3) new_op = "t";
+
     std::string mock_json = R"({
         "action": "replace",
         "target_node": "sigma_x",
-        "new_operator": "sigma_z"
+        "new_operator": ")" + new_op + R"("
     })";
 
     return mock_json;
@@ -88,10 +93,15 @@ ExprPtr LLMMutator::mutate_ast(ExprPtr failed_equation, const std::string& lean_
     if (!mutation_history_.empty()) history_str.pop_back(); history_str.pop_back();
     history_str += " ]";
 
-    // Format new input with history included
-    std::string user_input = "Voici l'erreur. Historique des tentatives échouées : " + history_str + 
-                             ". Propose une mutation DIFFÉRENTE.\nÉquation Actuelle : " + failed_equation->to_string() + 
-                             "\nLean Log/Error: " + lean_log;
+    // Format new input with history included matching exact ticket request
+    std::string user_input = "Voici l'erreur Lean 4 : [" + lean_log + 
+                             "]. Voici ce qu'on a déjà essayé : " + history_str + 
+                             ". Voici l'équation actuelle de l'AST : [" + failed_equation->to_string() + 
+                             "]. Propose une nouvelle mutation en JSON.";
+
+    std::cout << "\n[LLMMutator] =======================================\n";
+    std::cout << "[LLMMutator] Prompt envoyé au LLM local :\n" << user_input << "\n";
+    std::cout << "[LLMMutator] =======================================\n" << std::endl;
 
     // Add current failure to history
     mutation_history_.push_back(failed_equation->to_string());
@@ -119,10 +129,13 @@ ExprPtr LLMMutator::mutate_ast(ExprPtr failed_equation, const std::string& lean_
             // Re-create a new operator to replace the target
             std::cout << " -> Executing AST mutation: Replacing '" << target << "' with '" << new_op << "'" << std::endl;
             
-            // For example, if LLM suggests sigma_z instead of sigma_x:
-            // return a completely new AST or mutated tree.
-            // We just return a mock new AST representing the merged state.
-            return make_lindblad_dissipator(make_pauli(PauliAxis::Z), make_density_matrix(), 0.01);
+            // Dynamic mutation matching the LLM output logic to break the loop!
+            if (new_op == "sigma_z") return make_lindblad_dissipator(make_pauli(PauliAxis::Z), make_density_matrix(), 0.01);
+            if (new_op == "sigma_y") return make_lindblad_dissipator(make_pauli(PauliAxis::Y), make_density_matrix(), 0.01);
+            if (new_op == "gamma") return make_mul(make_var("gamma"), make_pauli(PauliAxis::Z));
+            if (new_op == "t") return make_mul(make_var("t"), make_pauli(PauliAxis::X));
+            
+            return make_lindblad_dissipator(make_pauli(PauliAxis::X), make_density_matrix(), 0.01);
         }
     } catch (const json::exception& e) {
         std::cerr << "[LLMMutator] Failed to parse LLM JSON output: " << e.what() << std::endl;

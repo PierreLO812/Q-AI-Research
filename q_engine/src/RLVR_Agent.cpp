@@ -13,15 +13,18 @@ bool RLVRAgent::prove(const std::string& theorem_name, ExprPtr lhs, ExprPtr rhs)
 
     for (const auto& tactic : tactics_) {
         std::string code = LeanTranslator::generate_theorem_file(theorem_name, lhs, rhs, tactic);
+        std::cout << "[RLVR] Generated Lean 4 Code:\n" << code << std::endl;
         std::cout << "[RLVR] Trying tactic: " << tactic << std::endl;
 
         LeanResult result = LeanInterface::verify_theorem(code);
 
         if (result.success) {
             std::cout << "[RLVR] SUCCESS! Lean kernel verified theorem using tactic: " << tactic << std::endl;
+            last_lean_error_ = "";
             return true;
         } else {
             std::cout << "[RLVR] Tactic failed. Lean feedback: " << result.message << std::endl;
+            last_lean_error_ = result.message; // Propagate exact stderr to Mutator
         }
     }
 

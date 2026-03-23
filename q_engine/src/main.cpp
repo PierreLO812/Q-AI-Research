@@ -147,7 +147,13 @@ int main(int argc, char** argv) {
 
     // ─── Phase 9: SINDy offloaded to Python Worker ────────────────────────────
     std::cout << "\n[4/6] Offloading High-Dimensional Regression to Python (PySINDy Worker)..." << std::endl;
-    ExprPtr sindy_law = PythonBridge::execute_worker_sindy("workers/worker_sindy.py", "{\"matrix_data\": [0.5, 0.2]}");
+    std::string sindy_payload = "{\"t\": [";
+    for(size_t i=0; i<variable_sets.size(); ++i) { sindy_payload += std::to_string(variable_sets[i].at("t")) + (i < variable_sets.size()-1 ? "," : ""); }
+    sindy_payload += "], \"F\": [";
+    for(size_t i=0; i<reference_fidelity.size(); ++i) { sindy_payload += std::to_string(reference_fidelity[i]) + (i < reference_fidelity.size()-1 ? "," : ""); }
+    sindy_payload += "]}";
+    
+    ExprPtr sindy_law = PythonBridge::execute_worker_sindy("workers/worker_sindy.py", sindy_payload);
 
     std::cout << "\n[4.5/6] Z3 SMT Constraint Satisfiability Check..." << std::endl;
     bool is_z3_sat = Z3Validator::verify_satisfiability(discovered_law);
@@ -187,7 +193,12 @@ int main(int argc, char** argv) {
             std::cout << "\n   => [EQUATION REJECTED] Mathematical Valid: " << equation_is_mathematically_valid 
                       << ", Signal Survived: " << signal_survived << std::endl;
             
-            lean_err = "Type mismatch or fidelity failure on AST.";
+            // Absolute logic error routing: fetch the stderr extracted from Lean 4 
+            lean_err = agent.get_last_lean_error();
+            if (lean_err.empty() && !signal_survived) {
+                lean_err = "Physics trajectory fidelity dropped under 95%. Equation does not match actual data.";
+            }
+
             std::cout << "\n[Moteur d'Inférence] Invoking Keep-Alive LLM for AST Mutation (Attempt " 
                       << llm_loop + 1 << " / " << MAX_MUTATIONS << ")..." << std::endl;
 
